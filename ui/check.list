@@ -1,0 +1,42 @@
+JV-1080 UI Checklist
+
+
+[X] Patch name
+
+Common Tab
+[ ] Patch Level             (Dial)
+[ ] Patch Pan               (Dial)
+[ ] Analog Feel Depth       (Dial)
+[ ] Octave Shift            (ComboBox)
+[ ] Stretch Tune Depth      (ComboBox)
+[ ] Voice Priority          (ComboBox)
+[ ] Velocity Range Switch   (ComboBox)
+[X] Default Tempo           (SpinBox)
+[ ] Velocity Range Lower    (Dial)
+[ ] Velocity Range Upper    (Dial)
+[ ] Velocity Cross Fade Dep (Dial)
+[ ] Key Range Lower         (Dial)
+[ ] Key Range Upper         (Dial)
+[ ] Structure               (ComboBox)
+[ ] Booster Level           (ComboBox)
+
+Effects Tab
+
+
+Control Tab
+
+
+Wave Tab
+
+
+LFO Tab
+
+
+Pitch Tab
+
+
+TVF Tab
+
+
+TVA Tab
+
