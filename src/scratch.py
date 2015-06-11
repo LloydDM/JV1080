@@ -53,6 +53,17 @@ Created on Mar 1, 2015
 # a = ["A" + str(100 - i) + ":" + str(i) + "B" for i in range(0, 101)]
 # print tuple(a)
 
-import jvmidimap as jv
+a = range(0, 98, 2)
+b = range(100, 196, 4)
+c = range(200, 392, 8)
+d = range(400, 896, 16)
 
-print jv.PATCH_TONE.index("Wave Gain")
+# print a, b, c, d
+
+final = []
+final.extend(a)
+final.extend(b)
+final.extend(c)
+final.extend(d)
+
+print tuple(final)

@@ -1,0 +1,7 @@
+#! /bin/sh
+
+rm jv1080-qtcreator-old.py
+mv jv1080-qtcreator.py jv1080-qtcreator-old.py
+pyuic4 jv1080-qtcreator.ui > jv1080-qtcreator.py
+cat uiboiler >> jv1080-qtcreator.py
+
