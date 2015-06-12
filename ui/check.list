@@ -94,15 +94,15 @@ Control Tab
 [ ] Control 3 Depth 4       (SpinBox)
 
 Wave Tab
-[ ] Wave Group              (ComboBox)
-[ ] Wave Select             (ComboBox)		Requires split-byte send
-[ ] Wave Gain               (ComboBox)
-[ ] Tone Switch             (CheckBox)
-[ ] FXM Switch              (CheckBox)
-[ ] FXM Color               (SpinBox)
-[ ] FXM Depth               (SpinBox)
-[ ] Tone Delay Mode         (ComboBox)
-[ ] Tone Delay Time         (SpinBox)
+[X] Wave Group              (ComboBox)
+[X] Wave Select             (ComboBox)		Requires split-byte send
+[X] Wave Gain               (ComboBox)
+[X] Tone Switch             (CheckBox)
+[X] FXM Switch              (CheckBox)
+[X] FXM Color               (SpinBox)
+[X] FXM Depth               (SpinBox)
+[X] Tone Delay Mode         (ComboBox)
+[X] Tone Delay Time         (Dial)
 
 LFO Tab
 [ ] LFO 1 Waveform          (ComboBox)
