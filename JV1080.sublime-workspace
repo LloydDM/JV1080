@@ -67,7 +67,7 @@
 			"file": "ui/jv1080-qtcreator.py",
 			"settings":
 			{
-				"buffer_size": 64128,
+				"buffer_size": 85209,
 				"line_ending": "Unix"
 			}
 		},
@@ -75,7 +75,7 @@
 			"file": "ui/check.list",
 			"settings":
 			{
-				"buffer_size": 6730,
+				"buffer_size": 6724,
 				"line_ending": "Unix"
 			}
 		},
@@ -172,11 +172,12 @@
 	],
 	"file_history":
 	[
+		"/home/david/workspace/JV1080/ui/jv1080-qtcreator.ui",
+		"/home/david/workspace/JV1080/src/jvparams.py",
 		"/home/david/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
 		"/home/david/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
 		"/home/david/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
 		"/home/david/workspace/JV1080/src/jv1080.py",
-		"/home/david/workspace/JV1080/src/jvparams.py",
 		"/home/david/workspace/JV1080/src/jvmidimap.py",
 		"/home/david/test2.py",
 		"/home/david/workspace/JV1080/ui/jv1080-qtcreator.py",
@@ -221,7 +222,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -237,21 +238,21 @@
 						"selection":
 						[
 							[
-								12907,
-								12907
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2112.0,
+						"translation.y": 2139.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -290,7 +291,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 64128,
+						"buffer_size": 85209,
 						"regions":
 						{
 						},
@@ -311,7 +312,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -320,15 +321,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6730,
+						"buffer_size": 6724,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3663,
-								3663
+								4564,
+								4564
 							]
 						],
 						"settings":
@@ -336,10 +337,10 @@
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2622.0,
+						"translation.y": 2162.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -367,7 +368,7 @@
 						"translation.y": 966.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
