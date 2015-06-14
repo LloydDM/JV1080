@@ -54,7 +54,7 @@
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>4</number>
+     <number>7</number>
     </property>
     <widget class="QWidget" name="tab_common">
      <attribute name="title">
@@ -349,8 +349,23 @@
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout_2">
-       <item row="2" column="0">
+       <item row="2" column="0" alignment="Qt::AlignHCenter">
         <widget class="QLabel" name="label_patchlevelvalue">
+         <property name="minimumSize">
+          <size>
+           <width>46</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>46</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
          <property name="text">
           <string/>
          </property>
@@ -366,6 +381,12 @@
          </property>
          <property name="maximum">
           <number>127</number>
+         </property>
+         <property name="notchTarget">
+          <double>10.000000000000000</double>
+         </property>
+         <property name="notchesVisible">
+          <bool>true</bool>
          </property>
         </widget>
        </item>
@@ -389,6 +410,12 @@
          <property name="invertedControls">
           <bool>false</bool>
          </property>
+         <property name="notchTarget">
+          <double>10.000000000000000</double>
+         </property>
+         <property name="notchesVisible">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="1" column="1">
@@ -402,6 +429,12 @@
          <property name="value">
           <number>64</number>
          </property>
+         <property name="notchTarget">
+          <double>10.000000000000000</double>
+         </property>
+         <property name="notchesVisible">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="1" column="2">
@@ -411,6 +444,12 @@
          </property>
          <property name="maximum">
           <number>127</number>
+         </property>
+         <property name="notchTarget">
+          <double>10.000000000000000</double>
+         </property>
+         <property name="notchesVisible">
+          <bool>true</bool>
          </property>
         </widget>
        </item>
@@ -425,6 +464,12 @@
          <property name="value">
           <number>127</number>
          </property>
+         <property name="notchTarget">
+          <double>10.000000000000000</double>
+         </property>
+         <property name="notchesVisible">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="5" column="2">
@@ -434,6 +479,12 @@
          </property>
          <property name="maximum">
           <number>127</number>
+         </property>
+         <property name="notchTarget">
+          <double>10.000000000000000</double>
+         </property>
+         <property name="notchesVisible">
+          <bool>true</bool>
          </property>
         </widget>
        </item>
@@ -448,6 +499,12 @@
          <property name="value">
           <number>127</number>
          </property>
+         <property name="notchTarget">
+          <double>10.000000000000000</double>
+         </property>
+         <property name="notchesVisible">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="5" column="0">
@@ -455,13 +512,37 @@
          <property name="cursor">
           <cursorShape>ClosedHandCursor</cursorShape>
          </property>
+         <property name="minimum">
+          <number>1</number>
+         </property>
          <property name="maximum">
           <number>127</number>
          </property>
+         <property name="notchTarget">
+          <double>10.000000000000000</double>
+         </property>
+         <property name="notchesVisible">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
-       <item row="6" column="0">
+       <item row="6" column="0" alignment="Qt::AlignHCenter">
         <widget class="QLabel" name="label_velocityrangelowervalue">
+         <property name="minimumSize">
+          <size>
+           <width>46</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>46</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
          <property name="text">
           <string/>
          </property>
@@ -520,8 +601,23 @@
          </property>
         </widget>
        </item>
-       <item row="2" column="1">
+       <item row="2" column="1" alignment="Qt::AlignHCenter">
         <widget class="QLabel" name="label_patchpanvalue">
+         <property name="minimumSize">
+          <size>
+           <width>46</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>46</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
          <property name="text">
           <string/>
          </property>
@@ -540,8 +636,23 @@
          </property>
         </widget>
        </item>
-       <item row="2" column="2">
+       <item row="2" column="2" alignment="Qt::AlignHCenter">
         <widget class="QLabel" name="label_analogfeeldepthvalue">
+         <property name="minimumSize">
+          <size>
+           <width>46</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>46</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
          <property name="text">
           <string/>
          </property>
@@ -560,8 +671,23 @@
          </property>
         </widget>
        </item>
-       <item row="2" column="3">
+       <item row="2" column="3" alignment="Qt::AlignHCenter">
         <widget class="QLabel" name="label_velocitycrossfadedepthvalue">
+         <property name="minimumSize">
+          <size>
+           <width>46</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>46</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
          <property name="text">
           <string/>
          </property>
@@ -580,8 +706,23 @@
          </property>
         </widget>
        </item>
-       <item row="6" column="1">
+       <item row="6" column="1" alignment="Qt::AlignHCenter">
         <widget class="QLabel" name="label_velocityrangeuppervalue">
+         <property name="minimumSize">
+          <size>
+           <width>46</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>46</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
          <property name="text">
           <string/>
          </property>
@@ -590,8 +731,23 @@
          </property>
         </widget>
        </item>
-       <item row="6" column="2">
+       <item row="6" column="2" alignment="Qt::AlignHCenter">
         <widget class="QLabel" name="label_keyrangelowervalue">
+         <property name="minimumSize">
+          <size>
+           <width>46</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>46</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
          <property name="text">
           <string/>
          </property>
@@ -600,8 +756,23 @@
          </property>
         </widget>
        </item>
-       <item row="6" column="3">
+       <item row="6" column="3" alignment="Qt::AlignHCenter">
         <widget class="QLabel" name="label_keyrangeuppervalue">
+         <property name="minimumSize">
+          <size>
+           <width>46</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>46</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
          <property name="text">
           <string/>
          </property>
@@ -1131,12 +1302,24 @@
          <property name="cursor">
           <cursorShape>ClosedHandCursor</cursorShape>
          </property>
+         <property name="notchTarget">
+          <double>10.000000000000000</double>
+         </property>
+         <property name="notchesVisible">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="6" column="2">
         <widget class="QDial" name="dial_efxparameter7">
          <property name="cursor">
           <cursorShape>ClosedHandCursor</cursorShape>
+         </property>
+         <property name="notchTarget">
+          <double>10.000000000000000</double>
+         </property>
+         <property name="notchesVisible">
+          <bool>true</bool>
          </property>
         </widget>
        </item>
@@ -1145,12 +1328,24 @@
          <property name="cursor">
           <cursorShape>ClosedHandCursor</cursorShape>
          </property>
+         <property name="notchTarget">
+          <double>10.000000000000000</double>
+         </property>
+         <property name="notchesVisible">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="10" column="2">
         <widget class="QDial" name="dial_efxparameter11">
          <property name="cursor">
           <cursorShape>ClosedHandCursor</cursorShape>
+         </property>
+         <property name="notchTarget">
+          <double>10.000000000000000</double>
+         </property>
+         <property name="notchesVisible">
+          <bool>true</bool>
          </property>
         </widget>
        </item>
@@ -1159,10 +1354,31 @@
          <property name="cursor">
           <cursorShape>ClosedHandCursor</cursorShape>
          </property>
+         <property name="notchTarget">
+          <double>10.000000000000000</double>
+         </property>
+         <property name="notchesVisible">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
-       <item row="7" column="0">
+       <item row="7" column="0" alignment="Qt::AlignHCenter">
         <widget class="QLabel" name="label_efxparameter5value">
+         <property name="minimumSize">
+          <size>
+           <width>76</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>76</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
          <property name="text">
           <string/>
          </property>
@@ -1176,6 +1392,12 @@
          <property name="cursor">
           <cursorShape>ClosedHandCursor</cursorShape>
          </property>
+         <property name="notchTarget">
+          <double>10.000000000000000</double>
+         </property>
+         <property name="notchesVisible">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="6" column="0">
@@ -1183,10 +1405,31 @@
          <property name="cursor">
           <cursorShape>ClosedHandCursor</cursorShape>
          </property>
+         <property name="notchTarget">
+          <double>10.000000000000000</double>
+         </property>
+         <property name="notchesVisible">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
-       <item row="11" column="0">
+       <item row="11" column="0" alignment="Qt::AlignHCenter">
         <widget class="QLabel" name="label_efxparameter9value">
+         <property name="minimumSize">
+          <size>
+           <width>76</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>76</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
          <property name="text">
           <string/>
          </property>
@@ -1195,8 +1438,23 @@
          </property>
         </widget>
        </item>
-       <item row="2" column="0">
+       <item row="2" column="0" alignment="Qt::AlignHCenter">
         <widget class="QLabel" name="label_efxparameter1value">
+         <property name="minimumSize">
+          <size>
+           <width>76</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>76</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
          <property name="text">
           <string/>
          </property>
@@ -1209,6 +1467,12 @@
         <widget class="QDial" name="dial_efxparameter6">
          <property name="cursor">
           <cursorShape>ClosedHandCursor</cursorShape>
+         </property>
+         <property name="notchTarget">
+          <double>10.000000000000000</double>
+         </property>
+         <property name="notchesVisible">
+          <bool>true</bool>
          </property>
         </widget>
        </item>
@@ -1227,6 +1491,12 @@
          <property name="cursor">
           <cursorShape>ClosedHandCursor</cursorShape>
          </property>
+         <property name="notchTarget">
+          <double>10.000000000000000</double>
+         </property>
+         <property name="notchesVisible">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="0" column="0">
@@ -1243,6 +1513,12 @@
         <widget class="QDial" name="dial_efxparameter8">
          <property name="cursor">
           <cursorShape>ClosedHandCursor</cursorShape>
+         </property>
+         <property name="notchTarget">
+          <double>10.000000000000000</double>
+         </property>
+         <property name="notchesVisible">
+          <bool>true</bool>
          </property>
         </widget>
        </item>
@@ -1261,12 +1537,24 @@
          <property name="cursor">
           <cursorShape>ClosedHandCursor</cursorShape>
          </property>
+         <property name="notchTarget">
+          <double>10.000000000000000</double>
+         </property>
+         <property name="notchesVisible">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="1" column="3">
         <widget class="QDial" name="dial_efxparameter4">
          <property name="cursor">
           <cursorShape>ClosedHandCursor</cursorShape>
+         </property>
+         <property name="notchTarget">
+          <double>10.000000000000000</double>
+         </property>
+         <property name="notchesVisible">
+          <bool>true</bool>
          </property>
         </widget>
        </item>
@@ -1296,8 +1584,23 @@
          </property>
         </spacer>
        </item>
-       <item row="11" column="1">
+       <item row="11" column="1" alignment="Qt::AlignHCenter">
         <widget class="QLabel" name="label_efxparameter10value">
+         <property name="minimumSize">
+          <size>
+           <width>76</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>76</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
          <property name="text">
           <string/>
          </property>
@@ -1306,8 +1609,23 @@
          </property>
         </widget>
        </item>
-       <item row="11" column="2">
+       <item row="11" column="2" alignment="Qt::AlignHCenter">
         <widget class="QLabel" name="label_efxparameter11value">
+         <property name="minimumSize">
+          <size>
+           <width>76</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>76</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
          <property name="text">
           <string/>
          </property>
@@ -1316,8 +1634,23 @@
          </property>
         </widget>
        </item>
-       <item row="11" column="3">
+       <item row="11" column="3" alignment="Qt::AlignHCenter">
         <widget class="QLabel" name="label_efxparameter12value">
+         <property name="minimumSize">
+          <size>
+           <width>76</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>76</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
          <property name="text">
           <string/>
          </property>
@@ -1356,8 +1689,23 @@
          </property>
         </widget>
        </item>
-       <item row="7" column="1">
+       <item row="7" column="1" alignment="Qt::AlignHCenter">
         <widget class="QLabel" name="label_efxparameter6value">
+         <property name="minimumSize">
+          <size>
+           <width>76</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>76</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
          <property name="text">
           <string/>
          </property>
@@ -1366,8 +1714,23 @@
          </property>
         </widget>
        </item>
-       <item row="7" column="2">
+       <item row="7" column="2" alignment="Qt::AlignHCenter">
         <widget class="QLabel" name="label_efxparameter7value">
+         <property name="minimumSize">
+          <size>
+           <width>76</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>76</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
          <property name="text">
           <string/>
          </property>
@@ -1376,8 +1739,23 @@
          </property>
         </widget>
        </item>
-       <item row="7" column="3">
+       <item row="7" column="3" alignment="Qt::AlignHCenter">
         <widget class="QLabel" name="label_efxparameter8value">
+         <property name="minimumSize">
+          <size>
+           <width>76</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>76</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
          <property name="text">
           <string/>
          </property>
@@ -1416,8 +1794,23 @@
          </property>
         </widget>
        </item>
-       <item row="2" column="1">
+       <item row="2" column="1" alignment="Qt::AlignHCenter">
         <widget class="QLabel" name="label_efxparameter2value">
+         <property name="minimumSize">
+          <size>
+           <width>76</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>76</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
          <property name="text">
           <string/>
          </property>
@@ -1426,8 +1819,23 @@
          </property>
         </widget>
        </item>
-       <item row="2" column="2">
+       <item row="2" column="2" alignment="Qt::AlignHCenter">
         <widget class="QLabel" name="label_efxparameter3value">
+         <property name="minimumSize">
+          <size>
+           <width>76</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>76</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
          <property name="text">
           <string/>
          </property>
@@ -1436,8 +1844,23 @@
          </property>
         </widget>
        </item>
-       <item row="2" column="3">
+       <item row="2" column="3" alignment="Qt::AlignHCenter">
         <widget class="QLabel" name="label_efxparameter4value">
+         <property name="minimumSize">
+          <size>
+           <width>76</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>76</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
          <property name="text">
           <string/>
          </property>
@@ -1640,6 +2063,9 @@
         <height>25</height>
        </rect>
       </property>
+      <property name="maximum">
+       <number>127</number>
+      </property>
      </widget>
      <widget class="QSpinBox" name="spinBox_efxoutputlevel">
       <property name="geometry">
@@ -1649,6 +2075,9 @@
         <width>81</width>
         <height>25</height>
        </rect>
+      </property>
+      <property name="maximum">
+       <number>127</number>
       </property>
      </widget>
      <widget class="QSpinBox" name="spinBox_EFXchorussendlevel">
@@ -1694,6 +2123,953 @@
      <attribute name="title">
       <string>Control</string>
      </attribute>
+     <widget class="QGroupBox" name="groupBox_control1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>210</y>
+        <width>216</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Control 1</string>
+      </property>
+      <widget class="QSpinBox" name="spinBox_control1depth4">
+       <property name="geometry">
+        <rect>
+         <x>155</x>
+         <y>190</y>
+         <width>51</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="minimum">
+        <number>-63</number>
+       </property>
+       <property name="maximum">
+        <number>63</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_control1dest">
+       <property name="geometry">
+        <rect>
+         <x>45</x>
+         <y>80</y>
+         <width>76</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Destination</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="spinBox_control1depth1">
+       <property name="geometry">
+        <rect>
+         <x>155</x>
+         <y>100</y>
+         <width>51</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="minimum">
+        <number>-63</number>
+       </property>
+       <property name="maximum">
+        <number>63</number>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="spinBox_control1depth3">
+       <property name="geometry">
+        <rect>
+         <x>155</x>
+         <y>160</y>
+         <width>51</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="minimum">
+        <number>-63</number>
+       </property>
+       <property name="maximum">
+        <number>63</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_control1depth">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>80</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Depth</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_control1dest4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>190</y>
+         <width>141</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_control1holdpeak">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>20</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Hold/Peak</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_control1holdpeak">
+       <property name="geometry">
+        <rect>
+         <x>145</x>
+         <y>40</y>
+         <width>61</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_control1dest2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>130</y>
+         <width>141</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_control1dest3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>160</y>
+         <width>141</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_control1dest1">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>100</y>
+         <width>141</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="spinBox_control1depth2">
+       <property name="geometry">
+        <rect>
+         <x>155</x>
+         <y>130</y>
+         <width>51</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="minimum">
+        <number>-63</number>
+       </property>
+       <property name="maximum">
+        <number>63</number>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_control2">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>210</y>
+        <width>216</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Control 2</string>
+      </property>
+      <widget class="QSpinBox" name="spinBox_control2depth4">
+       <property name="geometry">
+        <rect>
+         <x>155</x>
+         <y>190</y>
+         <width>51</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="minimum">
+        <number>-63</number>
+       </property>
+       <property name="maximum">
+        <number>63</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_control2dest">
+       <property name="geometry">
+        <rect>
+         <x>45</x>
+         <y>80</y>
+         <width>76</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Destination</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="spinBox_control2depth1">
+       <property name="geometry">
+        <rect>
+         <x>155</x>
+         <y>100</y>
+         <width>51</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="minimum">
+        <number>-63</number>
+       </property>
+       <property name="maximum">
+        <number>63</number>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="spinBox_control2depth3">
+       <property name="geometry">
+        <rect>
+         <x>155</x>
+         <y>160</y>
+         <width>51</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="minimum">
+        <number>-63</number>
+       </property>
+       <property name="maximum">
+        <number>63</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_control2depth">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>80</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Depth</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_control2dest4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>190</y>
+         <width>141</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_control2source">
+       <property name="geometry">
+        <rect>
+         <x>45</x>
+         <y>20</y>
+         <width>51</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Source</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_control2holdpeak">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>20</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Hold/Peak</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_control2source">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>116</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_control2holdpeak">
+       <property name="geometry">
+        <rect>
+         <x>145</x>
+         <y>40</y>
+         <width>61</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_control2dest2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>130</y>
+         <width>141</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_control2dest3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>160</y>
+         <width>141</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_control2dest1">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>100</y>
+         <width>141</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="spinBox_control2depth2">
+       <property name="geometry">
+        <rect>
+         <x>155</x>
+         <y>130</y>
+         <width>51</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="minimum">
+        <number>-63</number>
+       </property>
+       <property name="maximum">
+        <number>63</number>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_control3">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>210</y>
+        <width>216</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Control 3</string>
+      </property>
+      <widget class="QSpinBox" name="spinBox_control3depth4">
+       <property name="geometry">
+        <rect>
+         <x>155</x>
+         <y>190</y>
+         <width>51</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="minimum">
+        <number>-63</number>
+       </property>
+       <property name="maximum">
+        <number>63</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_control3dest">
+       <property name="geometry">
+        <rect>
+         <x>45</x>
+         <y>80</y>
+         <width>76</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Destination</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="spinBox_control3depth1">
+       <property name="geometry">
+        <rect>
+         <x>155</x>
+         <y>100</y>
+         <width>51</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="minimum">
+        <number>-63</number>
+       </property>
+       <property name="maximum">
+        <number>63</number>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="spinBox_control3depth3">
+       <property name="geometry">
+        <rect>
+         <x>155</x>
+         <y>160</y>
+         <width>51</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="minimum">
+        <number>-63</number>
+       </property>
+       <property name="maximum">
+        <number>63</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_control3depth">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>80</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Depth</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_control3dest4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>190</y>
+         <width>141</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_control3source">
+       <property name="geometry">
+        <rect>
+         <x>45</x>
+         <y>20</y>
+         <width>51</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Source</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_control3holdpeak">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>20</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Hold/Peak</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_control3source">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>116</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_control3holdpeak">
+       <property name="geometry">
+        <rect>
+         <x>145</x>
+         <y>40</y>
+         <width>61</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_control3dest2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>130</y>
+         <width>141</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_control3dest3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>160</y>
+         <width>141</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_control3dest1">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>100</y>
+         <width>141</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="spinBox_control3depth2">
+       <property name="geometry">
+        <rect>
+         <x>155</x>
+         <y>130</y>
+         <width>51</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="minimum">
+        <number>-63</number>
+       </property>
+       <property name="maximum">
+        <number>63</number>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_keyassignmode">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>106</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Key Assign Mode</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_keyassignmode">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>106</width>
+        <height>25</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_panswitch">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>75</y>
+        <width>106</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Pan Switch</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_panswitch">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>95</y>
+        <width>106</width>
+        <height>25</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_efxholdpeak">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>140</y>
+        <width>106</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>EFX Hold/Peak</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_efxholdpeak">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>106</width>
+        <height>25</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_sololegato">
+      <property name="geometry">
+       <rect>
+        <x>135</x>
+        <y>10</y>
+        <width>96</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="text">
+       <string>Solo Legato</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spinBox_bendrangedown">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>95</y>
+        <width>76</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>-48</number>
+      </property>
+      <property name="maximum">
+       <number>0</number>
+      </property>
+      <property name="value">
+       <number>-2</number>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spinBox_bendrangeup">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>160</y>
+        <width>76</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>12</number>
+      </property>
+      <property name="value">
+       <number>2</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_bendrangedown">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>75</y>
+        <width>116</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Bend Range Down</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_bendrangeup">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>140</y>
+        <width>116</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Bend Range Up</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_portamento">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>10</y>
+        <width>226</width>
+        <height>166</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Portamento</string>
+      </property>
+      <widget class="QComboBox" name="comboBox_portamentostart">
+       <property name="geometry">
+        <rect>
+         <x>135</x>
+         <y>135</y>
+         <width>81</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_portamentotype">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>110</y>
+         <width>111</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Portamento Type</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_portamentotime">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>50</y>
+         <width>111</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Portamento Time</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_portamentomode">
+       <property name="geometry">
+        <rect>
+         <x>135</x>
+         <y>75</y>
+         <width>81</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_portamentoswitch">
+       <property name="geometry">
+        <rect>
+         <x>-7</x>
+         <y>18</y>
+         <width>156</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text">
+        <string>Portamento Switch </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_portamentomode">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>116</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Portamento Mode</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_portamentostart">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>140</y>
+         <width>116</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Portamento Start</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_portamentotype">
+       <property name="geometry">
+        <rect>
+         <x>135</x>
+         <y>105</y>
+         <width>81</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="spinBox_portamentotime">
+       <property name="geometry">
+        <rect>
+         <x>135</x>
+         <y>45</y>
+         <width>81</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>127</number>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_volumeswitch">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>30</y>
+        <width>116</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="text">
+       <string>Volume Switch</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_benderswitch">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>60</y>
+        <width>116</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="text">
+       <string>Bender Switch</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_hold1switch">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>90</y>
+        <width>116</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="text">
+       <string>Hold 1 Switch</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_redamperswitch">
+      <property name="geometry">
+       <rect>
+        <x>495</x>
+        <y>120</y>
+        <width>131</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="text">
+       <string>Redamper Switch</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_wave">
      <attribute name="title">
@@ -1843,6 +3219,12 @@
          <height>25</height>
         </rect>
        </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>4</number>
+       </property>
       </widget>
       <widget class="QSpinBox" name="spinBox_fxmdepth">
        <property name="geometry">
@@ -1853,19 +3235,34 @@
          <height>25</height>
         </rect>
        </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>16</number>
+       </property>
       </widget>
      </widget>
      <widget class="QDial" name="dial_tonedelaytime">
       <property name="geometry">
        <rect>
         <x>165</x>
-        <y>270</y>
+        <y>275</y>
         <width>66</width>
         <height>67</height>
        </rect>
       </property>
       <property name="cursor">
        <cursorShape>ClosedHandCursor</cursorShape>
+      </property>
+      <property name="maximum">
+       <number>127</number>
+      </property>
+      <property name="notchTarget">
+       <double>10.000000000000000</double>
+      </property>
+      <property name="notchesVisible">
+       <bool>true</bool>
       </property>
      </widget>
      <widget class="QLabel" name="label_tonedelaymode">
@@ -1913,11 +3310,14 @@
      <widget class="QLabel" name="label_tonedelaytimevalue">
       <property name="geometry">
        <rect>
-        <x>170</x>
-        <y>340</y>
-        <width>59</width>
+        <x>175</x>
+        <y>350</y>
+        <width>46</width>
         <height>16</height>
        </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
       </property>
       <property name="text">
        <string/>
@@ -1995,8 +3395,17 @@
         </rect>
        </property>
        <layout class="QGridLayout" name="gridLayout_3">
-        <item row="6" column="1">
+        <item row="6" column="1" alignment="Qt::AlignHCenter">
          <widget class="QLabel" name="label_lfo1pandepthvalue">
+          <property name="minimumSize">
+           <size>
+            <width>46</width>
+            <height>16</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
           <property name="text">
            <string/>
           </property>
@@ -2005,8 +3414,17 @@
           </property>
          </widget>
         </item>
-        <item row="6" column="0">
+        <item row="6" column="0" alignment="Qt::AlignHCenter">
          <widget class="QLabel" name="label_lfo1amplitudedepthvalue">
+          <property name="minimumSize">
+           <size>
+            <width>46</width>
+            <height>16</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
           <property name="text">
            <string/>
           </property>
@@ -2026,10 +3444,36 @@
          </widget>
         </item>
         <item row="5" column="0">
-         <widget class="QDial" name="dial_lfo1amplitudedepth"/>
+         <widget class="QDial" name="dial_lfo1amplitudedepth">
+          <property name="minimum">
+           <number>-63</number>
+          </property>
+          <property name="maximum">
+           <number>63</number>
+          </property>
+          <property name="notchTarget">
+           <double>10.000000000000000</double>
+          </property>
+          <property name="notchesVisible">
+           <bool>true</bool>
+          </property>
+         </widget>
         </item>
         <item row="1" column="1">
-         <widget class="QDial" name="dial_lfo1filterdepth"/>
+         <widget class="QDial" name="dial_lfo1filterdepth">
+          <property name="minimum">
+           <number>-63</number>
+          </property>
+          <property name="maximum">
+           <number>63</number>
+          </property>
+          <property name="notchTarget">
+           <double>10.000000000000000</double>
+          </property>
+          <property name="notchesVisible">
+           <bool>true</bool>
+          </property>
+         </widget>
         </item>
         <item row="4" column="0">
          <widget class="QLabel" name="label_lfo1amplitudedepth">
@@ -2061,8 +3505,17 @@
           </property>
          </widget>
         </item>
-        <item row="2" column="0">
+        <item row="2" column="0" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
          <widget class="QLabel" name="label_lfo1pitchdepthvalue">
+          <property name="minimumSize">
+           <size>
+            <width>46</width>
+            <height>16</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
           <property name="text">
            <string/>
           </property>
@@ -2072,13 +3525,48 @@
          </widget>
         </item>
         <item row="5" column="1">
-         <widget class="QDial" name="dial_lfo1pandepth"/>
+         <widget class="QDial" name="dial_lfo1pandepth">
+          <property name="minimum">
+           <number>-63</number>
+          </property>
+          <property name="maximum">
+           <number>63</number>
+          </property>
+          <property name="notchTarget">
+           <double>10.000000000000000</double>
+          </property>
+          <property name="notchesVisible">
+           <bool>true</bool>
+          </property>
+         </widget>
         </item>
         <item row="1" column="0">
-         <widget class="QDial" name="dial_lfo1pitchdepth"/>
+         <widget class="QDial" name="dial_lfo1pitchdepth">
+          <property name="minimum">
+           <number>-63</number>
+          </property>
+          <property name="maximum">
+           <number>63</number>
+          </property>
+          <property name="notchTarget">
+           <double>10.000000000000000</double>
+          </property>
+          <property name="notchesVisible">
+           <bool>true</bool>
+          </property>
+         </widget>
         </item>
-        <item row="2" column="1">
+        <item row="2" column="1" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
          <widget class="QLabel" name="label_lfo1filterdepthvalue">
+          <property name="minimumSize">
+           <size>
+            <width>46</width>
+            <height>16</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
           <property name="text">
            <string/>
           </property>
@@ -2126,12 +3614,28 @@
          </widget>
         </item>
         <item>
-         <widget class="QDial" name="dial_lfo1rate"/>
+         <widget class="QDial" name="dial_lfo1rate">
+          <property name="notchTarget">
+           <double>10.000000000000000</double>
+          </property>
+          <property name="notchesVisible">
+           <bool>true</bool>
+          </property>
+         </widget>
         </item>
-        <item>
+        <item alignment="Qt::AlignHCenter">
          <widget class="QLabel" name="label_lfo1ratevalue">
+          <property name="minimumSize">
+           <size>
+            <width>46</width>
+            <height>16</height>
+           </size>
+          </property>
           <property name="contextMenuPolicy">
            <enum>Qt::DefaultContextMenu</enum>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
@@ -2262,6 +3766,9 @@
          <height>25</height>
         </rect>
        </property>
+       <property name="maximum">
+        <number>127</number>
+       </property>
       </widget>
       <widget class="QSpinBox" name="spinBox_lfo1fadetime">
        <property name="geometry">
@@ -2271,6 +3778,9 @@
          <width>71</width>
          <height>25</height>
         </rect>
+       </property>
+       <property name="maximum">
+        <number>127</number>
        </property>
       </widget>
      </widget>
@@ -2338,8 +3848,17 @@
         </rect>
        </property>
        <layout class="QGridLayout" name="gridLayout_6">
-        <item row="6" column="1">
+        <item row="6" column="1" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
          <widget class="QLabel" name="label_lfo2pandepthvalue">
+          <property name="minimumSize">
+           <size>
+            <width>46</width>
+            <height>16</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
           <property name="text">
            <string/>
           </property>
@@ -2348,8 +3867,17 @@
           </property>
          </widget>
         </item>
-        <item row="6" column="0">
+        <item row="6" column="0" alignment="Qt::AlignHCenter">
          <widget class="QLabel" name="label_lfo2amplitudedepthvalue">
+          <property name="minimumSize">
+           <size>
+            <width>46</width>
+            <height>16</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
           <property name="text">
            <string/>
           </property>
@@ -2369,10 +3897,36 @@
          </widget>
         </item>
         <item row="5" column="0">
-         <widget class="QDial" name="dial_lfo2amplitudedepth"/>
+         <widget class="QDial" name="dial_lfo2amplitudedepth">
+          <property name="minimum">
+           <number>-63</number>
+          </property>
+          <property name="maximum">
+           <number>63</number>
+          </property>
+          <property name="notchTarget">
+           <double>10.000000000000000</double>
+          </property>
+          <property name="notchesVisible">
+           <bool>true</bool>
+          </property>
+         </widget>
         </item>
         <item row="1" column="1">
-         <widget class="QDial" name="dial_lfo2filterdepth"/>
+         <widget class="QDial" name="dial_lfo2filterdepth">
+          <property name="minimum">
+           <number>-63</number>
+          </property>
+          <property name="maximum">
+           <number>63</number>
+          </property>
+          <property name="notchTarget">
+           <double>10.000000000000000</double>
+          </property>
+          <property name="notchesVisible">
+           <bool>true</bool>
+          </property>
+         </widget>
         </item>
         <item row="4" column="0">
          <widget class="QLabel" name="label_lfo2amplitudedepth">
@@ -2404,8 +3958,17 @@
           </property>
          </widget>
         </item>
-        <item row="2" column="0">
+        <item row="2" column="0" alignment="Qt::AlignHCenter">
          <widget class="QLabel" name="label_lfo2pitchdepthvalue">
+          <property name="minimumSize">
+           <size>
+            <width>46</width>
+            <height>16</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
           <property name="text">
            <string/>
           </property>
@@ -2415,13 +3978,48 @@
          </widget>
         </item>
         <item row="5" column="1">
-         <widget class="QDial" name="dial_lfo2pandepth"/>
+         <widget class="QDial" name="dial_lfo2pandepth">
+          <property name="minimum">
+           <number>-63</number>
+          </property>
+          <property name="maximum">
+           <number>63</number>
+          </property>
+          <property name="notchTarget">
+           <double>10.000000000000000</double>
+          </property>
+          <property name="notchesVisible">
+           <bool>true</bool>
+          </property>
+         </widget>
         </item>
         <item row="1" column="0">
-         <widget class="QDial" name="dial_lfo2pitchdepth"/>
+         <widget class="QDial" name="dial_lfo2pitchdepth">
+          <property name="minimum">
+           <number>-63</number>
+          </property>
+          <property name="maximum">
+           <number>63</number>
+          </property>
+          <property name="notchTarget">
+           <double>10.000000000000000</double>
+          </property>
+          <property name="notchesVisible">
+           <bool>true</bool>
+          </property>
+         </widget>
         </item>
-        <item row="2" column="1">
+        <item row="2" column="1" alignment="Qt::AlignHCenter">
          <widget class="QLabel" name="label_lfo2filterdepthvalue">
+          <property name="minimumSize">
+           <size>
+            <width>46</width>
+            <height>16</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
           <property name="text">
            <string/>
           </property>
@@ -2469,12 +4067,31 @@
          </widget>
         </item>
         <item>
-         <widget class="QDial" name="dial_lfo2rate"/>
+         <widget class="QDial" name="dial_lfo2rate">
+          <property name="maximum">
+           <number>127</number>
+          </property>
+          <property name="notchTarget">
+           <double>10.000000000000000</double>
+          </property>
+          <property name="notchesVisible">
+           <bool>true</bool>
+          </property>
+         </widget>
         </item>
-        <item>
+        <item alignment="Qt::AlignHCenter">
          <widget class="QLabel" name="label_lfo2ratevalue">
+          <property name="minimumSize">
+           <size>
+            <width>46</width>
+            <height>16</height>
+           </size>
+          </property>
           <property name="contextMenuPolicy">
            <enum>Qt::DefaultContextMenu</enum>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
@@ -2605,6 +4222,9 @@
          <height>25</height>
         </rect>
        </property>
+       <property name="maximum">
+        <number>127</number>
+       </property>
       </widget>
       <widget class="QSpinBox" name="spinBox_lfo2fadetime">
        <property name="geometry">
@@ -2615,6 +4235,9 @@
          <height>25</height>
         </rect>
        </property>
+       <property name="maximum">
+        <number>127</number>
+       </property>
       </widget>
      </widget>
     </widget>
@@ -2622,16 +4245,2840 @@
      <attribute name="title">
       <string>Pitch</string>
      </attribute>
+     <widget class="QGroupBox" name="groupBox_pitchenvelope">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>10</y>
+        <width>481</width>
+        <height>346</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Envelope</string>
+      </property>
+      <widget class="QSlider" name="verticalSlider_penvtime1">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>180</y>
+         <width>26</width>
+         <height>136</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>127</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::TicksBothSides</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="verticalSlider_penvtime2">
+       <property name="geometry">
+        <rect>
+         <x>75</x>
+         <y>180</y>
+         <width>26</width>
+         <height>136</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>127</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::TicksBothSides</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="verticalSlider_penvtime3">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>180</y>
+         <width>26</width>
+         <height>136</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>127</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::TicksBothSides</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="verticalSlider_penvtime4">
+       <property name="geometry">
+        <rect>
+         <x>185</x>
+         <y>180</y>
+         <width>26</width>
+         <height>136</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>127</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::TicksBothSides</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="verticalSlider_penvlevel1">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>180</y>
+         <width>26</width>
+         <height>136</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>127</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::TicksBothSides</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="verticalSlider_penvlevel2">
+       <property name="geometry">
+        <rect>
+         <x>325</x>
+         <y>180</y>
+         <width>26</width>
+         <height>136</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>127</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::TicksBothSides</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="verticalSlider_penvlevel3">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>180</y>
+         <width>26</width>
+         <height>136</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>127</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::TicksBothSides</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="verticalSlider_penvlevel4">
+       <property name="geometry">
+        <rect>
+         <x>435</x>
+         <y>180</y>
+         <width>26</width>
+         <height>136</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>127</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::TicksBothSides</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_penvtime1value">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>320</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_penvtime2value">
+       <property name="geometry">
+        <rect>
+         <x>65</x>
+         <y>320</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_penvtime3value">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>320</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_penvtime4value">
+       <property name="geometry">
+        <rect>
+         <x>175</x>
+         <y>320</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_penvlevel1value">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>320</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_penvlevel2value">
+       <property name="geometry">
+        <rect>
+         <x>315</x>
+         <y>320</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_penvlevel3value">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>320</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_penvlevel4value">
+       <property name="geometry">
+        <rect>
+         <x>425</x>
+         <y>320</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_penvveltime1sens">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>25</y>
+         <width>166</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Velocity Time 1 Sensitivity</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_penvveltime4sens">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>55</y>
+         <width>166</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Velocity Time 4 Sensitivity</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_penvtimekeyfollow">
+       <property name="geometry">
+        <rect>
+         <x>265</x>
+         <y>85</y>
+         <width>121</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Time Key Follow</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_penvveltime1sens">
+       <property name="geometry">
+        <rect>
+         <x>395</x>
+         <y>20</y>
+         <width>76</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_penvveltime4sens">
+       <property name="geometry">
+        <rect>
+         <x>395</x>
+         <y>50</y>
+         <width>76</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_penvtimekeyfollow">
+       <property name="geometry">
+        <rect>
+         <x>395</x>
+         <y>80</y>
+         <width>76</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_penvvelsensvalue">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>120</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QDial" name="dial_penvvelsens">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>45</y>
+         <width>66</width>
+         <height>66</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>127</number>
+       </property>
+       <property name="notchTarget">
+        <double>10.000000000000000</double>
+       </property>
+       <property name="notchesVisible">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_penvvelsens">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>25</y>
+         <width>126</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Velocity Sensitivity</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_penvdepth">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>25</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Depth</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QDial" name="dial_penvdepth">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>45</y>
+         <width>66</width>
+         <height>66</height>
+        </rect>
+       </property>
+       <property name="minimum">
+        <number>-12</number>
+       </property>
+       <property name="maximum">
+        <number>12</number>
+       </property>
+       <property name="notchTarget">
+        <double>10.000000000000000</double>
+       </property>
+       <property name="notchesVisible">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_penvdepthvalue">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>120</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_penvtime1">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>160</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Time 1</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_penvtime4">
+       <property name="geometry">
+        <rect>
+         <x>175</x>
+         <y>160</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Time 4</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_penvtime2">
+       <property name="geometry">
+        <rect>
+         <x>65</x>
+         <y>160</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Time 2</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_penvtime3">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>160</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Time 3</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_penvlevel2">
+       <property name="geometry">
+        <rect>
+         <x>315</x>
+         <y>160</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Level 2</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_penvlevel1">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>160</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Level 1</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_penvlevel3">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>160</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Level 3</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_penvlevel4">
+       <property name="geometry">
+        <rect>
+         <x>425</x>
+         <y>160</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Level 4</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_pitchcoarsetune">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>86</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Coarse Tune</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QDial" name="dial_pitchcoarsetune">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>66</width>
+        <height>66</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>-48</number>
+      </property>
+      <property name="maximum">
+       <number>48</number>
+      </property>
+      <property name="singleStep">
+       <number>1</number>
+      </property>
+      <property name="notchTarget">
+       <double>10.000000000000000</double>
+      </property>
+      <property name="notchesVisible">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_pitchcoarsetunevalue">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>105</y>
+        <width>46</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_pitchfinetune">
+      <property name="geometry">
+       <rect>
+        <x>145</x>
+        <y>10</y>
+        <width>86</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Fine Tune</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QDial" name="dial_pitchfinetune">
+      <property name="geometry">
+       <rect>
+        <x>155</x>
+        <y>30</y>
+        <width>66</width>
+        <height>66</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>-50</number>
+      </property>
+      <property name="maximum">
+       <number>50</number>
+      </property>
+      <property name="notchTarget">
+       <double>10.000000000000000</double>
+      </property>
+      <property name="notchesVisible">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_pitchfinetunevalue">
+      <property name="geometry">
+       <rect>
+        <x>165</x>
+        <y>105</y>
+        <width>46</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_pitchrandompitchdepth">
+      <property name="geometry">
+       <rect>
+        <x>245</x>
+        <y>10</y>
+        <width>136</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Random Pitch Depth</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QDial" name="dial_pitchrandompitchdepth">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>30</y>
+        <width>66</width>
+        <height>66</height>
+       </rect>
+      </property>
+      <property name="notchTarget">
+       <double>10.000000000000000</double>
+      </property>
+      <property name="notchesVisible">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_pitchrandompitchdepthvalue">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>105</y>
+        <width>46</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_pitchkeyfollow">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>165</y>
+        <width>76</width>
+        <height>25</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_pitchkeyfollow">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>145</y>
+        <width>106</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Pitch Key Follow</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_tvf">
      <attribute name="title">
       <string>TVF</string>
      </attribute>
+     <widget class="QGroupBox" name="groupBox_filterenvelope">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>10</y>
+        <width>481</width>
+        <height>346</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Envelope</string>
+      </property>
+      <widget class="QSlider" name="verticalSlider_fenvtime1">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>180</y>
+         <width>26</width>
+         <height>136</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>127</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::TicksBothSides</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="verticalSlider_fenvtime2">
+       <property name="geometry">
+        <rect>
+         <x>75</x>
+         <y>180</y>
+         <width>26</width>
+         <height>136</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>127</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::TicksBothSides</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="verticalSlider_fenvtime3">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>180</y>
+         <width>26</width>
+         <height>136</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>127</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::TicksBothSides</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="verticalSlider_fenvtime4">
+       <property name="geometry">
+        <rect>
+         <x>185</x>
+         <y>180</y>
+         <width>26</width>
+         <height>136</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>127</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::TicksBothSides</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="verticalSlider_fenvlevel1">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>180</y>
+         <width>26</width>
+         <height>136</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>127</number>
+       </property>
+       <property name="value">
+        <number>127</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::TicksBothSides</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="verticalSlider_fenvlevel2">
+       <property name="geometry">
+        <rect>
+         <x>325</x>
+         <y>180</y>
+         <width>26</width>
+         <height>136</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>127</number>
+       </property>
+       <property name="value">
+        <number>127</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::TicksBothSides</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="verticalSlider_fenvlevel3">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>180</y>
+         <width>26</width>
+         <height>136</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>127</number>
+       </property>
+       <property name="value">
+        <number>127</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::TicksBothSides</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="verticalSlider_fenvlevel4">
+       <property name="geometry">
+        <rect>
+         <x>435</x>
+         <y>180</y>
+         <width>26</width>
+         <height>136</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>127</number>
+       </property>
+       <property name="value">
+        <number>127</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::TicksBothSides</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_fenvtime1value">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>320</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_fenvtime2value">
+       <property name="geometry">
+        <rect>
+         <x>65</x>
+         <y>320</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_fenvtime3value">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>320</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_fenvtime4value">
+       <property name="geometry">
+        <rect>
+         <x>175</x>
+         <y>320</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_fenvlevel1value">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>320</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_fenvlevel2value">
+       <property name="geometry">
+        <rect>
+         <x>315</x>
+         <y>320</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_fenvlevel3value">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>320</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_fenvlevel4value">
+       <property name="geometry">
+        <rect>
+         <x>425</x>
+         <y>320</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_fenvveltime1sens">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>25</y>
+         <width>166</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Velocity Time 1 Sensitivity</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_fenvveltime4sens">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>55</y>
+         <width>166</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Velocity Time 4 Sensitivity</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_fenvtimekeyfollow">
+       <property name="geometry">
+        <rect>
+         <x>265</x>
+         <y>85</y>
+         <width>121</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Time Key Follow</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_fenvveltime1sens">
+       <property name="geometry">
+        <rect>
+         <x>395</x>
+         <y>20</y>
+         <width>76</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_fenvveltime4sens">
+       <property name="geometry">
+        <rect>
+         <x>395</x>
+         <y>50</y>
+         <width>76</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_fenvtimekeyfollow">
+       <property name="geometry">
+        <rect>
+         <x>395</x>
+         <y>80</y>
+         <width>76</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_fenvvelsensvalue">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>120</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QDial" name="dial_fenvvelsens">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>45</y>
+         <width>66</width>
+         <height>66</height>
+        </rect>
+       </property>
+       <property name="notchTarget">
+        <double>10.000000000000000</double>
+       </property>
+       <property name="notchesVisible">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_fenvvelsens">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>25</y>
+         <width>126</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Velocity Sensitivity</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_fenvdepth">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>25</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Depth</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QDial" name="dial_fenvdepth">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>45</y>
+         <width>66</width>
+         <height>66</height>
+        </rect>
+       </property>
+       <property name="minimum">
+        <number>-63</number>
+       </property>
+       <property name="maximum">
+        <number>63</number>
+       </property>
+       <property name="notchTarget">
+        <double>10.000000000000000</double>
+       </property>
+       <property name="notchesVisible">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_fenvdepthvalue">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>120</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_fenvvelcurve">
+       <property name="geometry">
+        <rect>
+         <x>295</x>
+         <y>115</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Velocity Curve</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_fenvvelcurve">
+       <property name="geometry">
+        <rect>
+         <x>395</x>
+         <y>110</y>
+         <width>76</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_fenvtime1">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>160</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Time 1</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_fenvtime4">
+       <property name="geometry">
+        <rect>
+         <x>175</x>
+         <y>160</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Time 4</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_fenvtime2">
+       <property name="geometry">
+        <rect>
+         <x>65</x>
+         <y>160</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Time 2</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_fenvtime3">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>160</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Time 3</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_fenvlevel2">
+       <property name="geometry">
+        <rect>
+         <x>315</x>
+         <y>160</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Level 2</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_fenvlevel1">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>160</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Level 1</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_fenvlevel3">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>160</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Level 3</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_fenvlevel4">
+       <property name="geometry">
+        <rect>
+         <x>425</x>
+         <y>160</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Level 4</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QDial" name="dial_filtercutofffreq">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>66</width>
+        <height>66</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>127</number>
+      </property>
+      <property name="notchTarget">
+       <double>10.000000000000000</double>
+      </property>
+      <property name="notchesVisible">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_filtercutofffreq">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>10</y>
+        <width>116</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Cutoff Frequency</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_filtercutofffreqvalue">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>105</y>
+        <width>46</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QDial" name="dial_filterresonance">
+      <property name="geometry">
+       <rect>
+        <x>155</x>
+        <y>30</y>
+        <width>66</width>
+        <height>66</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>127</number>
+      </property>
+      <property name="notchTarget">
+       <double>10.000000000000000</double>
+      </property>
+      <property name="notchesVisible">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_filterresonance">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>10</y>
+        <width>76</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Resonance</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_filterresonancevalue">
+      <property name="geometry">
+       <rect>
+        <x>165</x>
+        <y>105</y>
+        <width>46</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QDial" name="dial_filterresonancevelsens">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>30</y>
+        <width>66</width>
+        <height>66</height>
+       </rect>
+      </property>
+      <property name="notchTarget">
+       <double>10.000000000000000</double>
+      </property>
+      <property name="notchesVisible">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_filterresonancevelsens">
+      <property name="geometry">
+       <rect>
+        <x>245</x>
+        <y>10</y>
+        <width>136</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Resonance Vel. Sens.</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_filterresonancevelsensvalue">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>105</y>
+        <width>46</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_filtertype">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>145</y>
+        <width>66</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Filter Type</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_filtertype">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>165</y>
+        <width>76</width>
+        <height>25</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_filtercutoffkeyfollow">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>145</y>
+        <width>116</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Cutoff Key Follow</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_filtercutoffkeyfollow">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>165</y>
+        <width>76</width>
+        <height>25</height>
+       </rect>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_tva">
      <attribute name="title">
       <string>TVA</string>
      </attribute>
+     <widget class="QGroupBox" name="groupBox_ampenvelope">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>10</y>
+        <width>481</width>
+        <height>346</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Envelope</string>
+      </property>
+      <widget class="QSlider" name="verticalSlider_aenvtime1">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>180</y>
+         <width>26</width>
+         <height>136</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>127</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::TicksBothSides</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="verticalSlider_aenvtime2">
+       <property name="geometry">
+        <rect>
+         <x>75</x>
+         <y>180</y>
+         <width>26</width>
+         <height>136</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>127</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::TicksBothSides</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="verticalSlider_aenvtime3">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>180</y>
+         <width>26</width>
+         <height>136</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>127</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::TicksBothSides</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="verticalSlider_aenvtime4">
+       <property name="geometry">
+        <rect>
+         <x>185</x>
+         <y>180</y>
+         <width>26</width>
+         <height>136</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>127</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::TicksBothSides</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="verticalSlider_aenvlevel1">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>180</y>
+         <width>26</width>
+         <height>136</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>127</number>
+       </property>
+       <property name="value">
+        <number>127</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::TicksBothSides</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="verticalSlider_aenvlevel2">
+       <property name="geometry">
+        <rect>
+         <x>325</x>
+         <y>180</y>
+         <width>26</width>
+         <height>136</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>127</number>
+       </property>
+       <property name="value">
+        <number>127</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::TicksBothSides</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="verticalSlider_aenvlevel3">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>180</y>
+         <width>26</width>
+         <height>136</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>127</number>
+       </property>
+       <property name="value">
+        <number>127</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::TicksBothSides</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_aenvtime1value">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>320</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_aenvtime2value">
+       <property name="geometry">
+        <rect>
+         <x>65</x>
+         <y>320</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_aenvtime3value">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>320</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_aenvtime4value">
+       <property name="geometry">
+        <rect>
+         <x>175</x>
+         <y>320</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_aenvlevel1value">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>320</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_aenvlevel2value">
+       <property name="geometry">
+        <rect>
+         <x>315</x>
+         <y>320</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_aenvlevel3value">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>320</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_aenvveltime1sens">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>25</y>
+         <width>166</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Velocity Time 1 Sensitivity</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_aenvveltime4sens">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>55</y>
+         <width>166</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Velocity Time 4 Sensitivity</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_aenvtimekeyfollow">
+       <property name="geometry">
+        <rect>
+         <x>265</x>
+         <y>85</y>
+         <width>121</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Time Key Follow</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_aenvveltime1sens">
+       <property name="geometry">
+        <rect>
+         <x>395</x>
+         <y>20</y>
+         <width>76</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_aenvveltime4sens">
+       <property name="geometry">
+        <rect>
+         <x>395</x>
+         <y>50</y>
+         <width>76</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_aenvtimekeyfollow">
+       <property name="geometry">
+        <rect>
+         <x>395</x>
+         <y>80</y>
+         <width>76</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_aenvvelsensvalue">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>120</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QDial" name="dial_aenvvelsens">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>45</y>
+         <width>66</width>
+         <height>66</height>
+        </rect>
+       </property>
+       <property name="notchTarget">
+        <double>10.000000000000000</double>
+       </property>
+       <property name="notchesVisible">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_aenvvelsens">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>25</y>
+         <width>126</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Velocity Sensitivity</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_aenvvelcurve">
+       <property name="geometry">
+        <rect>
+         <x>295</x>
+         <y>115</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Velocity Curve</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_aenvvelcurve">
+       <property name="geometry">
+        <rect>
+         <x>395</x>
+         <y>110</y>
+         <width>76</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_aenvtime1">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>160</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Time 1</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_aenvtime4">
+       <property name="geometry">
+        <rect>
+         <x>175</x>
+         <y>160</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Time 4</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_aenvtime2">
+       <property name="geometry">
+        <rect>
+         <x>65</x>
+         <y>160</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Time 2</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_aenvtime3">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>160</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Time 3</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_aenvlevel2">
+       <property name="geometry">
+        <rect>
+         <x>315</x>
+         <y>160</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Level 2</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_aenvlevel1">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>160</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Level 1</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_aenvlevel3">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>160</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Level 3</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QDial" name="dial_amptonelevel">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>66</width>
+        <height>66</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>127</number>
+      </property>
+      <property name="value">
+       <number>127</number>
+      </property>
+      <property name="notchTarget">
+       <double>10.000000000000000</double>
+      </property>
+      <property name="notchesVisible">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_amptonelevel">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>10</y>
+        <width>76</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tone Level</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_amptonelevelvalue">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>105</y>
+        <width>46</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_amptonepanvalue">
+      <property name="geometry">
+       <rect>
+        <x>165</x>
+        <y>105</y>
+        <width>46</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QDial" name="dial_amptonepan">
+      <property name="geometry">
+       <rect>
+        <x>155</x>
+        <y>30</y>
+        <width>66</width>
+        <height>66</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>127</number>
+      </property>
+      <property name="value">
+       <number>64</number>
+      </property>
+      <property name="notchTarget">
+       <double>10.000000000000000</double>
+      </property>
+      <property name="notchesVisible">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_amptonepan">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>10</y>
+        <width>76</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tone Pan</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QDial" name="dial_amprandompandepth">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>30</y>
+        <width>66</width>
+        <height>66</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>63</number>
+      </property>
+      <property name="notchTarget">
+       <double>10.000000000000000</double>
+      </property>
+      <property name="notchesVisible">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_amprandompandepthvalue">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>105</y>
+        <width>46</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_amprandompandepth">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>10</y>
+        <width>126</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Random Pan Depth</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_ampaltpandepth">
+      <property name="geometry">
+       <rect>
+        <x>245</x>
+        <y>145</y>
+        <width>136</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Alternate Pan Depth</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QDial" name="dial_ampaltpandepth">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>165</y>
+        <width>66</width>
+        <height>66</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>127</number>
+      </property>
+      <property name="notchTarget">
+       <double>10.000000000000000</double>
+      </property>
+      <property name="notchesVisible">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_ampaltpandepthvalue">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>240</y>
+        <width>46</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_ampbiaslevel">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>165</y>
+        <width>76</width>
+        <height>25</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_ampbiaslevel">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>145</y>
+        <width>76</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Bias Level</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QDial" name="dial_ampbiaspoint">
+      <property name="geometry">
+       <rect>
+        <x>155</x>
+        <y>165</y>
+        <width>66</width>
+        <height>66</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>127</number>
+      </property>
+      <property name="notchTarget">
+       <double>10.000000000000000</double>
+      </property>
+      <property name="notchesVisible">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_ampbiaspointvalue">
+      <property name="geometry">
+       <rect>
+        <x>165</x>
+        <y>240</y>
+        <width>46</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_ampbiaspoint">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>145</y>
+        <width>76</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Bias Point</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_ampbiasdirection">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>230</y>
+        <width>76</width>
+        <height>25</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_ampbiasdirection">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>210</y>
+        <width>96</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Bias Direction</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_amppankeyfollow">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>275</y>
+        <width>96</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Pan Key Follow</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_amppankeyfollow">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>295</y>
+        <width>76</width>
+        <height>25</height>
+       </rect>
+      </property>
+     </widget>
     </widget>
    </widget>
    <widget class="QWidget" name="layoutWidget">

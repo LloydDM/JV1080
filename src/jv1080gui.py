@@ -8,6 +8,7 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt4 import QtCore, QtGui
+import jvparams as jvp
 
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
@@ -2304,7 +2305,7 @@ class Ui_MainWindow(object):
         self.menubar.addAction(self.menuFile.menuAction())
 
         self.retranslateUi(MainWindow)
-        self.tabWidget.setCurrentIndex(7)
+        self.tabWidget.setCurrentIndex(0)
         QtCore.QObject.connect(self.actionQuit, QtCore.SIGNAL(_fromUtf8("activated()")), MainWindow.close)
         QtCore.QObject.connect(self.dial_patchlevel, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), self.label_patchlevelvalue.setNum)
         QtCore.QObject.connect(self.dial_patchpan, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), self.label_patchpanvalue.setNum)
@@ -2318,8 +2319,19 @@ class Ui_MainWindow(object):
         self.params_to_controls()
 
     def params_to_controls(self):
-        pass
-
+        self.comboBox_octaveshift.addItems(jvp.PATCH_COMMON_PARAMS['Octave Shift'])
+        self.comboBox_octaveshift.setCurrentIndex(3)
+        self.comboBox_voicepriority.addItems(jvp.PATCH_COMMON_PARAMS['Voice Priority'])
+        self.comboBox_voicepriority.setCurrentIndex(0)
+        self.comboBox_stretchtunedepth.addItems(jvp.PATCH_COMMON_PARAMS['Stretch Tune Depth'])
+        self.comboBox_stretchtunedepth.setCurrentIndex(0)
+        self.comboBox_velocityrangeswitch.addItems(jvp.PATCH_COMMON_PARAMS['Velocity Range Switch'])
+        self.comboBox_velocityrangeswitch.setCurrentIndex(0)
+        self.comboBox_structure.addItems(jvp.PATCH_COMMON_PARAMS['Structure'])
+        self.comboBox_structure.setCurrentIndex(0)
+        self.comboBox_boosterlevel.addItems(jvp.PATCH_COMMON_PARAMS['Booster Level'])
+        self.comboBox_boosterlevel.setCurrentIndex(0)
+        
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(_translate("MainWindow", "JV1080 Patch Editor", None))
         self.groupBox_patchname.setTitle(_translate("MainWindow", "Patch Name", None))
