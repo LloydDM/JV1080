@@ -53,17 +53,21 @@ Created on Mar 1, 2015
 # a = ["A" + str(100 - i) + ":" + str(i) + "B" for i in range(0, 101)]
 # print tuple(a)
 
-a = range(0, 98, 2)
-b = range(100, 196, 4)
-c = range(200, 392, 8)
-d = range(400, 896, 16)
+# a = range(0, 98, 2)
+# b = range(100, 196, 4)
+# c = range(200, 392, 8)
+# d = range(400, 896, 16)
 
-# print a, b, c, d
+# # print a, b, c, d
 
-final = []
-final.extend(a)
-final.extend(b)
-final.extend(c)
-final.extend(d)
+# final = []
+# final.extend(a)
+# final.extend(b)
+# final.extend(c)
+# final.extend(d)
 
-print tuple(final)
+# print tuple(final)
+
+import jvparams
+
+print jvparams.PATCH_PITCH_PARAMS['P-ENV Velocity Sensitivity'].index(0)
