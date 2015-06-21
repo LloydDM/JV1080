@@ -1858,6 +1858,9 @@ class Ui_MainWindow(object):
         self.label_fenvvelsensvalue.setObjectName(_fromUtf8("label_fenvvelsensvalue"))
         self.dial_fenvvelsens = QtGui.QDial(self.groupBox_filterenvelope)
         self.dial_fenvvelsens.setGeometry(QtCore.QRect(110, 45, 66, 66))
+        self.dial_fenvvelsens.setMinimum(0)
+        self.dial_fenvvelsens.setMaximum(125)
+        self.dial_fenvvelsens.setProperty("value", 50)
         self.dial_fenvvelsens.setNotchTarget(1.0)
         self.dial_fenvvelsens.setNotchesVisible(True)
         self.dial_fenvvelsens.setObjectName(_fromUtf8("dial_fenvvelsens"))
@@ -1871,8 +1874,9 @@ class Ui_MainWindow(object):
         self.label_fenvdepth.setObjectName(_fromUtf8("label_fenvdepth"))
         self.dial_fenvdepth = QtGui.QDial(self.groupBox_filterenvelope)
         self.dial_fenvdepth.setGeometry(QtCore.QRect(5, 45, 66, 66))
-        self.dial_fenvdepth.setMinimum(-63)
-        self.dial_fenvdepth.setMaximum(63)
+        self.dial_fenvdepth.setMinimum(0)
+        self.dial_fenvdepth.setMaximum(127)
+        self.dial_fenvdepth.setProperty("value", 63)
         self.dial_fenvdepth.setNotchTarget(1.0)
         self.dial_fenvdepth.setNotchesVisible(True)
         self.dial_fenvdepth.setObjectName(_fromUtf8("dial_fenvdepth"))
@@ -1924,6 +1928,7 @@ class Ui_MainWindow(object):
         self.dial_filtercutofffreq = QtGui.QDial(self.tab_tvf)
         self.dial_filtercutofffreq.setGeometry(QtCore.QRect(30, 30, 66, 66))
         self.dial_filtercutofffreq.setMaximum(127)
+        self.dial_filtercutofffreq.setProperty("value", 127)
         self.dial_filtercutofffreq.setNotchTarget(1.0)
         self.dial_filtercutofffreq.setNotchesVisible(True)
         self.dial_filtercutofffreq.setObjectName(_fromUtf8("dial_filtercutofffreq"))
@@ -1955,6 +1960,8 @@ class Ui_MainWindow(object):
         self.label_filterresonancevalue.setObjectName(_fromUtf8("label_filterresonancevalue"))
         self.dial_filterresonancevelsens = QtGui.QDial(self.tab_tvf)
         self.dial_filterresonancevelsens.setGeometry(QtCore.QRect(280, 30, 66, 66))
+        self.dial_filterresonancevelsens.setMaximum(125)
+        self.dial_filterresonancevelsens.setProperty("value", 50)
         self.dial_filterresonancevelsens.setNotchTarget(1.0)
         self.dial_filterresonancevelsens.setNotchesVisible(True)
         self.dial_filterresonancevelsens.setObjectName(_fromUtf8("dial_filterresonancevelsens"))
@@ -2125,6 +2132,8 @@ class Ui_MainWindow(object):
         self.label_aenvvelsensvalue.setObjectName(_fromUtf8("label_aenvvelsensvalue"))
         self.dial_aenvvelsens = QtGui.QDial(self.groupBox_ampenvelope)
         self.dial_aenvvelsens.setGeometry(QtCore.QRect(110, 45, 66, 66))
+        self.dial_aenvvelsens.setMaximum(125)
+        self.dial_aenvvelsens.setProperty("value", 50)
         self.dial_aenvvelsens.setNotchTarget(1.0)
         self.dial_aenvvelsens.setNotchesVisible(True)
         self.dial_aenvvelsens.setObjectName(_fromUtf8("dial_aenvvelsens"))
@@ -2243,6 +2252,7 @@ class Ui_MainWindow(object):
         self.dial_ampbiaspoint = QtGui.QDial(self.tab_tva)
         self.dial_ampbiaspoint.setGeometry(QtCore.QRect(155, 165, 66, 66))
         self.dial_ampbiaspoint.setMaximum(127)
+        self.dial_ampbiaspoint.setProperty("value", 60)
         self.dial_ampbiaspoint.setNotchTarget(1.0)
         self.dial_ampbiaspoint.setNotchesVisible(True)
         self.dial_ampbiaspoint.setObjectName(_fromUtf8("dial_ampbiaspoint"))
@@ -2331,7 +2341,8 @@ class Ui_MainWindow(object):
 
         self.initialize_comboBoxes()
         self.initialize_dial_values()
-        self.update_structure_image()
+        self.update_structure_image('1')
+        self.update_efx_parameters('STEREO EQ')
         self.retranslateUi(MainWindow)
         
         QtCore.QObject.connect(self.actionQuit, QtCore.SIGNAL(_fromUtf8("activated()")), MainWindow.close)
@@ -2344,6 +2355,7 @@ class Ui_MainWindow(object):
         QtCore.QObject.connect(self.dial_keyrangelower, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), self.label_keyrangelowervalue.setNum)
         QtCore.QObject.connect(self.dial_keyrangeupper, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), self.label_keyrangeuppervalue.setNum)
         QtCore.QObject.connect(self.comboBox_structure, QtCore.SIGNAL(_fromUtf8("currentIndexChanged(QString)")), self.update_structure_image)
+        QtCore.QObject.connect(self.comboBox_effecttype, QtCore.SIGNAL(_fromUtf8("currentIndexChanged(QString)")), self.update_efx_parameters)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
         
     def initialize_comboBoxes(self):
@@ -2368,6 +2380,10 @@ class Ui_MainWindow(object):
         self.comboBox_EFXoutput.setCurrentIndex(0)
         self.comboBox_effecttype.addItems(jvp.PATCH_EFX_PARAMS['Patch EFX Type'])
         self.comboBox_effecttype.setCurrentIndex(0)
+        self.comboBox_efxcontrol1.addItems(jvp.PATCH_EFX_PARAMS['Patch EFX Control Source 1'])
+        self.comboBox_efxcontrol1.setCurrentIndex(0)
+        self.comboBox_efxcontrol2.addItems(jvp.PATCH_EFX_PARAMS['Patch EFX Control Source 2'])
+        self.comboBox_efxcontrol2.setCurrentIndex(0)
         self.comboBox_patchchorusoutputassign.addItems(jvp.PATCH_EFX_PARAMS['Patch Chorus Output Assign'])
         self.comboBox_patchchorusoutputassign.setCurrentIndex(0)
         self.comboBox_patchreverbtype.addItems(jvp.PATCH_EFX_PARAMS['Patch Reverb Type'])
@@ -2547,9 +2563,53 @@ class Ui_MainWindow(object):
         self.label_fenvlevel3value.setNum(self.verticalSlider_fenvlevel3.value())
         self.label_fenvlevel4value.setNum(self.verticalSlider_fenvlevel4.value())
 
-    def update_structure_image(self):
+        # TVA Tab
+        self.label_amptonelevelvalue.setNum(self.dial_amptonelevel.value())
+        self.label_amptonepanvalue.setNum(jvp.PATCH_TVA_PARAMS['Tone Pan'][self.dial_amptonepan.value()])
+        self.label_amprandompandepthvalue.setNum(self.dial_amprandompandepth.value())
+        self.label_ampbiaspointvalue.setText(jvp.PATCH_TVA_PARAMS['Bias Point'][self.dial_ampbiaspoint.value()])
+        self.label_ampaltpandepthvalue.setNum(self.dial_ampaltpandepth.value())
+        self.label_aenvvelsensvalue.setNum(jvp.PATCH_TVA_PARAMS['A-ENV Velocity Sensitivity'][self.dial_aenvvelsens.value()])
+        self.label_aenvtime1value.setNum(self.verticalSlider_aenvtime1.value())
+        self.label_aenvtime2value.setNum(self.verticalSlider_aenvtime2.value())
+        self.label_aenvtime3value.setNum(self.verticalSlider_aenvtime3.value())
+        self.label_aenvtime4value.setNum(self.verticalSlider_aenvtime4.value())
+        self.label_aenvlevel1value.setNum(self.verticalSlider_aenvlevel1.value())
+        self.label_aenvlevel2value.setNum(self.verticalSlider_aenvlevel2.value())
+        self.label_aenvlevel3value.setNum(self.verticalSlider_aenvlevel3.value())
+
+    
+
+    def update_efx_parameters(self, effect):
+        self.label_efxcontrol1.setText(jvp.EFX_PARAMS[str(effect)][0][0])
+        self.label_efxcontrol2.setText(jvp.EFX_PARAMS[str(effect)][0][1])
+        if jvp.EFX_PARAMS[str(effect)][0][1] == '':
+            self.comboBox_efxcontrol2.setDisabled(True)
+            self.spinBox_efxcontrol2.setDisabled(True)
+        else:
+            self.comboBox_efxcontrol2.setEnabled(True)
+            self.spinBox_efxcontrol2.setEnabled(True)
+
+        efxdials = [self.dial_efxparameter1, self.dial_efxparameter2, self.dial_efxparameter3, self.dial_efxparameter4, self.dial_efxparameter5, self.dial_efxparameter6, self.dial_efxparameter7, self.dial_efxparameter8, self.dial_efxparameter9, self.dial_efxparameter10, self.dial_efxparameter11, self.dial_efxparameter12]
+        efxlabels = [self.label_efxparameter1, self.label_efxparameter2, self.label_efxparameter3, self.label_efxparameter4, self.label_efxparameter5, self.label_efxparameter6, self.label_efxparameter7, self.label_efxparameter8, self.label_efxparameter9, self.label_efxparameter10, self.label_efxparameter11, self.label_efxparameter12]
+        efxvalues = [self.label_efxparameter1value, self.label_efxparameter2value, self.label_efxparameter3value, self.label_efxparameter4value, self.label_efxparameter5value, self.label_efxparameter6value, self.label_efxparameter7value, self.label_efxparameter8value, self.label_efxparameter9value, self.label_efxparameter10value, self.label_efxparameter11value, self.label_efxparameter12value]
+        
+        paramlist = jvp.EFX_PARAMS[str(effect)][1:]
+
+        for efxparam in range(len(paramlist)):
+            efxlabels[efxparam].setText(str(paramlist[efxparam][0]))
+            efxdials[efxparam].setEnabled(True)
+            # dial defaults
+            efxvalues[efxparam].setText(str(paramlist[efxparam][1][efxdials[efxparam].value()]))
+        
+        for emptylabel in range((efxparam + 1), len(efxlabels)):
+            efxlabels[emptylabel].setText('')
+            efxvalues[emptylabel].setText('')
+            efxdials[emptylabel].setDisabled(True)
+        
+    def update_structure_image(self, structure):
         self.structureImage = QtGui.QPixmap()
-        self.structureImage.load('../img/structure' + self.comboBox_structure.currentText() + '.png')
+        self.structureImage.load('../img/structure' + structure + '.png')
         self.structureScene = QtGui.QGraphicsScene()
         self.structureScene.addPixmap(self.structureImage)
         self.graphicsView_structure.setScene(self.structureScene)
