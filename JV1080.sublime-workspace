@@ -4,100 +4,256 @@
 		"selected_items":
 		[
 			[
-				"set",
-				"setDisabled	function"
+				"labelpenti",
+				"label_penvtime1value	statement"
 			],
 			[
-				"efx",
-				"efxlabels	statement"
+				"labpenvve",
+				"label_penvvelsensvalue	statement"
 			],
 			[
-				"EFX",
-				"EFX_PARAMS	statement"
-			],
-			[
-				"comefx",
-				"comboBox_efxcontrol1"
-			],
-			[
-				"spefx",
-				"spinBox_efxcontrol2	statement"
-			],
-			[
-				"spinefx",
-				"spinBox_efxcontrol2	statement"
-			],
-			[
-				"combefxco",
-				"comboBox_efxcontrol2	statement"
-			],
-			[
-				"setE",
-				"setEnabled	function"
-			],
-			[
-				"comef",
-				"comboBox_efxcontrol1	statement"
-			],
-			[
-				"comboBox_eff",
-				"comboBox_effecttype"
-			],
-			[
-				"update_",
-				"update_efx_parameters"
-			],
-			[
-				"cu",
-				"currentText	function"
-			],
-			[
-				"coef",
-				"comboBox_effecttype	statement"
-			],
-			[
-				"Pan",
-				"Pan"
-			],
-			[
-				"labfenvels",
-				"label_fenvvelsensvalue	statement"
-			],
-			[
-				"dial",
-				"dial_penvdepth"
-			],
-			[
-				"diafil",
-				"dial_filterresonancevelsens	statement"
-			],
-			[
-				"labfenv",
-				"label_fenvdepthvalue	statement"
+				"labpitran",
+				"label_pitchrandompitchdepthvalue	statement"
 			],
 			[
 				"PA",
-				"PATCH_TVF_PARAMS"
+				"PATCH_PITCH_PARAMS	statement"
 			],
 			[
-				"labfilve",
-				"label_filterresonancevelsensvalue	statement"
+				"label_pifi",
+				"label_pitchfinetunevalue	statement"
 			],
 			[
-				"dialfilr",
-				"dial_filterresonance"
+				"labelpi",
+				"label_pitchcoarsetune	statement"
 			],
 			[
-				"labfilres",
-				"label_filterresonancevalue	statement"
+				"dia",
+				"dial_lfo2pitchdepth"
 			],
 			[
-				"dialfil",
-				"dial_filtercutofffreq"
+				"di",
+				"dial_lfo2pandepth"
 			],
 			[
-				"lacut",
-				"label_filtercutofffreqvalue	statement"
+				"diallfo2",
+				"dial_lfo2filterdepth"
+			],
+			[
+				"d",
+				"dial_lfo2amplitudedepth"
+			],
+			[
+				"labellfo2r",
+				"label_lfo2ratevalue	statement"
+			],
+			[
+				"PAT",
+				"PATCH_LFO_PARAMS	statement"
+			],
+			[
+				"lablfo1a",
+				"label_lfo1amplitudedepthvalue	statement"
+			],
+			[
+				"diallfo1",
+				"dial_lfo1pandepth	statement"
+			],
+			[
+				"lablfo1pa",
+				"label_lfo1pandepthvalue	statement"
+			],
+			[
+				"lalfo1fil",
+				"label_lfo1filterdepthvalue	statement"
+			],
+			[
+				"lablfo1pi",
+				"label_lfo1pitchdepthvalue	statement"
+			],
+			[
+				"diallfo",
+				"dial_lfo1rate	statement"
+			],
+			[
+				"labellfo1r",
+				"label_lfo1ratevalue	statement"
+			],
+			[
+				"laton",
+				"label_tonedelaytimevalue	statement"
+			],
+			[
+				"diakeyr",
+				"dial_keyrangeupper	statement"
+			],
+			[
+				"lakeyr",
+				"label_keyrangeuppervalue	statement"
+			],
+			[
+				"labelkey",
+				"label_keyrangelower	statement"
+			],
+			[
+				"label_vel",
+				"label_velocityrangeuppervalue	statement"
+			],
+			[
+				"label_velocity",
+				"label_velocityrangelowervalue	statement"
+			],
+			[
+				"label_velo",
+				"label_velocitycrossfadedepthvalue	statement"
+			],
+			[
+				"label_ana",
+				"label_analogfeeldepthvalue	statement"
+			],
+			[
+				"dialpat",
+				"dial_patchpan	statement"
+			],
+			[
+				"ini",
+				"initialize_dial_values"
+			],
+			[
+				"comamp",
+				"comboBox_amppankeyfollow	statement"
+			],
+			[
+				"Key",
+				"Keyfollow"
+			],
+			[
+				"combam",
+				"comboBox_amppankeyfollow	statement"
+			],
+			[
+				"comam",
+				"comboBox_ampbiaslevel	statement"
+			],
+			[
+				"PATCH_",
+				"PATCH_TVA_PARAMS	statement"
+			],
+			[
+				"comfen",
+				"comboBox_fenvtimekeyfollow	statement"
+			],
+			[
+				"comfenv",
+				"comboBox_fenvveltime1sens	statement"
+			],
+			[
+				"comfe",
+				"comboBox_fenvveltime1sens	statement"
+			],
+			[
+				"comfil",
+				"comboBox_filtercutoffkeyfollow	statement"
+			],
+			[
+				"Ke",
+				"KeyFollow"
+			],
+			[
+				"combpen",
+				"comboBox_penvveltime4sens	statement"
+			],
+			[
+				"compevn",
+				"comboBox_penvveltime4sens	statement"
+			],
+			[
+				"compe",
+				"comboBox_penvveltime1sens	statement"
+			],
+			[
+				"compit",
+				"comboBox_penvveltime1sens	statement"
+			],
+			[
+				"PATCH",
+				"PATCH_PITCH_PARAMS	statement"
+			],
+			[
+				"comlfo1",
+				"comboBox_lfo1leveloffset	statement"
+			],
+			[
+				"W",
+				"Waveform"
+			],
+			[
+				"cur",
+				"currentText	function"
+			],
+			[
+				"comwav",
+				"comboBox_wavegroup	statement"
+			],
+			[
+				"WA",
+				"WAVE_LISTS	statement"
+			],
+			[
+				"comwa",
+				"comboBox_wavegroup	statement"
+			],
+			[
+				"comport",
+				"comboBox_portamentotype	statement"
+			],
+			[
+				"compor",
+				"comboBox_portamentostart	statement"
+			],
+			[
+				"comef",
+				"comboBox_efxholdpeak	statement"
+			],
+			[
+				"H",
+				"Hold"
+			],
+			[
+				"combpa",
+				"comboBox_panswitch	statement"
+			],
+			[
+				"M",
+				"Mode"
+			],
+			[
+				"s",
+				"self"
+			],
+			[
+				"in",
+				"index	function"
+			],
+			[
+				"combpat",
+				"comboBox_patchreverbhfdamp	statement"
+			],
+			[
+				"combrev",
+				"comboBox_patchreverbhfdamp	statement"
+			],
+			[
+				"come",
+				"comboBox_effecttype	statement"
+			],
+			[
+				"O",
+				"Output"
+			],
+			[
+				"comboef",
+				"comboBox_effectsoutput	statement"
 			],
 			[
 				"comboboos",
@@ -136,8 +292,8 @@
 				"addItems	function"
 			],
 			[
-				"O",
-				"Octave"
+				"set",
+				"setCurrentIndex	function"
 			],
 			[
 				"REV",
@@ -174,10 +330,6 @@
 			[
 				"1B",
 				"1B"
-			],
-			[
-				"s",
-				"sqrt	function"
 			]
 		]
 	},
@@ -187,16 +339,16 @@
 			"file": "src/jvparams.py",
 			"settings":
 			{
-				"buffer_size": 157006,
+				"buffer_size": 157446,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/jvmidimap.py",
+			"file": "src/scratch.py",
 			"settings":
 			{
-				"buffer_size": 7422,
-				"line_ending": "Windows"
+				"buffer_size": 1171,
+				"line_ending": "Unix"
 			}
 		},
 		{
@@ -231,12 +383,12 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 375.0,
-		"last_filter": "v",
+		"height": 208.0,
+		"last_filter": "view",
 		"selected_items":
 		[
 			[
-				"v",
+				"view",
 				"View: Toggle Menu"
 			],
 			[
@@ -244,7 +396,7 @@
 				"File: Save All"
 			],
 			[
-				"view",
+				"v",
 				"View: Toggle Menu"
 			],
 			[
@@ -290,33 +442,34 @@
 	},
 	"expanded_folders":
 	[
-		"/home/david/workspace/jv1080",
-		"/home/david/workspace/jv1080/src"
+		"/home/david/workspace/JV1080",
+		"/home/david/workspace/JV1080/src",
+		"/home/david/workspace/JV1080/ui"
 	],
 	"file_history":
 	[
+		"/home/david/.config/sublime-text-3/Packages/User/Anaconda.sublime-settings",
+		"/home/david/.config/sublime-text-3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/home/david/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
 		"/home/david/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
-		"/home/david/workspace/JV1080/ui/check.list",
 		"/home/david/workspace/JV1080/src/scratch.py",
+		"/home/david/workspace/JV1080/src/jvmidimap.py",
+		"/home/david/workspace/JV1080/ui/check.list",
 		"/home/david/workspace/JV1080/ui/jv1080-qtcreator.py",
 		"/home/david/workspace/JV1080/ui/jv1080-qtcreator.ui",
 		"/home/david/workspace/JV1080/src/jvparams.py",
 		"/home/david/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
 		"/home/david/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
 		"/home/david/workspace/JV1080/src/jv1080.py",
-		"/home/david/workspace/JV1080/src/jvmidimap.py",
 		"/home/david/test2.py",
-		"/home/david/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
-		"/home/david/.config/sublime-text-3/Packages/Anaconda/Anaconda.sublime-settings",
 		"/home/david/.config/sublime-text-3/Packages/User/Python.sublime-settings",
 		"/home/david/testaroo.py",
 		"/home/david/.config/sublime-text-3/Packages/Jedi - Python autocompletion/sublime_jedi.sublime-settings",
-		"/home/david/.config/sublime-text-3/Packages/User/Anaconda.sublime-settings",
 		"/home/david/workspace/test/src/test.py"
 	],
 	"find":
 	{
-		"height": 30.0
+		"height": 31.0
 	},
 	"find_in_files":
 	{
@@ -330,10 +483,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"setNotchTarget(10.0)",
-			"setNotchTarget(1.0)",
-			"setNotchTarget(10.0)",
-			"setNotchTarget"
+			"init_comboBoxes",
+			"params_to_controls"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -341,7 +492,6 @@
 		"regex": false,
 		"replace_history":
 		[
-			"setNotchTarget(1.0)"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -352,7 +502,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -361,15 +511,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 157006,
+						"buffer_size": 157446,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								30971,
-								30971
+								46013,
+								46013
 							]
 						],
 						"settings":
@@ -379,40 +529,38 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4730.0,
+						"translation.y": 7417.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "src/jvmidimap.py",
+					"file": "src/scratch.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7422,
+						"buffer_size": 1171,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5777,
-								5777
+								1168,
+								1168
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Python/Python.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1099.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -428,8 +576,8 @@
 						"selection":
 						[
 							[
-								188914,
-								188914
+								189257,
+								189257
 							]
 						],
 						"settings":
@@ -439,10 +587,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 46401.0,
+						"translation.y": 59294.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -450,7 +598,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 30.0
+		"height": 31.0
 	},
 	"input":
 	{
@@ -478,24 +626,20 @@
 			1.0
 		]
 	},
-	"menu_visible": false,
+	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 81.0
+		"height": 100.0
 	},
 	"output.find_results":
 	{
 		"height": 0.0
 	},
-	"output.unsaved_changes":
-	{
-		"height": 144.0
-	},
 	"pinned_build_system": "Packages/Python/Python.sublime-build",
 	"project": "JV1080.sublime-project",
 	"replace":
 	{
-		"height": 56.0
+		"height": 58.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -533,7 +677,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 149.0,
+	"side_bar_width": 219.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

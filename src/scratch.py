@@ -70,4 +70,4 @@ Created on Mar 1, 2015
 
 import jvparams
 
-print jvparams.PATCH_PITCH_PARAMS['P-ENV Velocity Sensitivity'].index(0)
+print jvparams.EFX_PARAMS['TREMOLO-CHORUS'][5][1].index(2.0)
