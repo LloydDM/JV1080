@@ -2332,6 +2332,7 @@ class Ui_MainWindow(object):
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtGui.QStatusBar(MainWindow)
         self.statusbar.setObjectName(_fromUtf8("statusbar"))
+        self.statusbar.setSizeGripEnabled(False)
         MainWindow.setStatusBar(self.statusbar)
         self.actionQuit = QtGui.QAction(MainWindow)
         self.actionQuit.setObjectName(_fromUtf8("actionQuit"))
@@ -2358,6 +2359,8 @@ class Ui_MainWindow(object):
         QtCore.QObject.connect(self.comboBox_effecttype, QtCore.SIGNAL(_fromUtf8("currentIndexChanged(QString)")), self.update_efx_parameters)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
         
+        self.statusbar.showMessage("Ready", 5000)
+
     def initialize_comboBoxes(self):
         # Common Tab
         self.comboBox_octaveshift.addItems(jvp.PATCH_COMMON_PARAMS['Octave Shift'])
@@ -2577,9 +2580,7 @@ class Ui_MainWindow(object):
         self.label_aenvlevel1value.setNum(self.verticalSlider_aenvlevel1.value())
         self.label_aenvlevel2value.setNum(self.verticalSlider_aenvlevel2.value())
         self.label_aenvlevel3value.setNum(self.verticalSlider_aenvlevel3.value())
-
-    
-
+   
     def update_efx_parameters(self, effect):
         self.label_efxcontrol1.setText(jvp.EFX_PARAMS[str(effect)][0][0])
         self.label_efxcontrol2.setText(jvp.EFX_PARAMS[str(effect)][0][1])
@@ -2599,13 +2600,16 @@ class Ui_MainWindow(object):
         for efxparam in range(len(paramlist)):
             efxlabels[efxparam].setText(str(paramlist[efxparam][0]))
             efxdials[efxparam].setEnabled(True)
-            # dial defaults
+            efxdials[efxparam].setNotchesVisible(True)
+            efxdials[efxparam].setMaximum(len(paramlist[efxparam][1]))
+            efxdials[efxparam].setProperty("value", paramlist[efxparam][2])
             efxvalues[efxparam].setText(str(paramlist[efxparam][1][efxdials[efxparam].value()]))
         
         for emptylabel in range((efxparam + 1), len(efxlabels)):
             efxlabels[emptylabel].setText('')
             efxvalues[emptylabel].setText('')
             efxdials[emptylabel].setDisabled(True)
+            efxdials[emptylabel].setNotchesVisible(False)
         
     def update_structure_image(self, structure):
         self.structureImage = QtGui.QPixmap()
