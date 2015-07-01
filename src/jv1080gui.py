@@ -9,6 +9,7 @@
 
 from PyQt4 import QtCore, QtGui
 import jvparams as jvp
+import jvmidimap as jvm
 
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
@@ -2802,6 +2803,11 @@ class Ui_MainWindow(object):
         self.label_toneselect.setText(_translate("MainWindow", "_____Tone Select_____", None))
         self.menuFile.setTitle(_translate("MainWindow", "File", None))
         self.actionQuit.setText(_translate("MainWindow", "Quit", None))
+
+    def midi_message(self, midiparam, midivalue):
+        PREAMBLE = [240, 65, 16, 106, 18]
+        EOX = [247]
+
 
 
 if __name__ == "__main__":
