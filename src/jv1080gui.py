@@ -2804,7 +2804,12 @@ class Ui_MainWindow(object):
         self.menuFile.setTitle(_translate("MainWindow", "File", None))
         self.actionQuit.setText(_translate("MainWindow", "Quit", None))
 
-    def midi_message(self, midiparam, midivalue):
+    def midi_message_common(self, midiparam, midivalue):
+        PREAMBLE = [240, 65, 16, 106, 18]
+        EOX = [247]
+        
+
+    def midi_message_tone(self, midiparam, midivalue):
         PREAMBLE = [240, 65, 16, 106, 18]
         EOX = [247]
 

@@ -6,11 +6,11 @@ Created on Feb 20, 2015
 MIDI Address map for the JV-1080
 '''
 
-PATCH_MODE = {'Patch Common': '\x00',
-              'Patch Tone 1': '\x10',
-              'Patch Tone 2': '\x12',
-              'Patch Tone 2': '\x14',
-              'Patch Tone 4': '\x16'
+PATCH_MODE = {'Patch Common': 0,
+              'Patch Tone 1': 16,
+              'Patch Tone 2': 18,
+              'Patch Tone 2': 20,
+              'Patch Tone 4': 22
               }
 
 PATCH_COMMON = ('Patch Name 1',
