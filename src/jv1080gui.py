@@ -190,6 +190,7 @@ class Ui_MainWindow(object):
         self.gridLayout_2.addWidget(self.dial_keyrangelower, 5, 2, 1, 1)
         self.dial_velocityrangeupper = QtGui.QDial(self.gridLayoutWidget)
         self.dial_velocityrangeupper.setCursor(QtGui.QCursor(QtCore.Qt.ClosedHandCursor))
+        self.dial_velocityrangeupper.setMinimum(1)
         self.dial_velocityrangeupper.setMaximum(127)
         self.dial_velocityrangeupper.setProperty("value", 127)
         self.dial_velocityrangeupper.setNotchTarget(1.0)
@@ -2348,14 +2349,14 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         
         QtCore.QObject.connect(self.actionQuit, QtCore.SIGNAL(_fromUtf8("activated()")), MainWindow.close)
-        QtCore.QObject.connect(self.dial_patchlevel, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), self.label_patchlevelvalue.setNum)
-        QtCore.QObject.connect(self.dial_patchpan, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), self.label_patchpanvalue.setNum)
-        QtCore.QObject.connect(self.dial_analogfeeldepth, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), self.label_analogfeeldepthvalue.setNum)
-        QtCore.QObject.connect(self.dial_velocitycrossfadedepth, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), self.label_velocitycrossfadedepthvalue.setNum)
-        QtCore.QObject.connect(self.dial_velocityrangelower, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), self.label_velocityrangelowervalue.setNum)
-        QtCore.QObject.connect(self.dial_velocityrangeupper, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), self.label_velocityrangeuppervalue.setNum)
-        QtCore.QObject.connect(self.dial_keyrangelower, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), self.label_keyrangelowervalue.setNum)
-        QtCore.QObject.connect(self.dial_keyrangeupper, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), self.label_keyrangeuppervalue.setNum)
+        QtCore.QObject.connect(self.dial_patchlevel, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), self.update_patch_level)
+        QtCore.QObject.connect(self.dial_patchpan, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), self.update_patch_pan)
+        QtCore.QObject.connect(self.dial_analogfeeldepth, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), self.update_analog_feel_depth)
+        QtCore.QObject.connect(self.dial_velocitycrossfadedepth, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), self.update_vel_xfade_depth)
+        QtCore.QObject.connect(self.dial_velocityrangelower, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), self.update_vel_range_lower)
+        QtCore.QObject.connect(self.dial_velocityrangeupper, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), self.update_vel_range_upper)
+        QtCore.QObject.connect(self.dial_keyrangelower, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), self.update_key_range_lower)
+        QtCore.QObject.connect(self.dial_keyrangeupper, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), self.update_key_range_upper)
         QtCore.QObject.connect(self.comboBox_structure, QtCore.SIGNAL(_fromUtf8("currentIndexChanged(QString)")), self.update_structure_image)
         QtCore.QObject.connect(self.comboBox_effecttype, QtCore.SIGNAL(_fromUtf8("currentIndexChanged(QString)")), self.update_efx_parameters)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -2804,9 +2805,68 @@ class Ui_MainWindow(object):
         self.menuFile.setTitle(_translate("MainWindow", "File", None))
         self.actionQuit.setText(_translate("MainWindow", "Quit", None))
 
+    def update_patch_level(self, knobvalue):
+        self.label_patchlevelvalue.setNum(knobvalue)
+        self.midi_message_common('Patch Level', knobvalue)
+
+    def update_patch_pan(self, knobvalue):
+        self.label_patchpanvalue.setNum(jvp.PATCH_COMMON_PARAMS['Patch Pan'][knobvalue])
+        self.midi_message_common('Patch Pan', knobvalue)
+
+    def update_analog_feel_depth(self, knobvalue):
+        self.label_analogfeeldepthvalue.setNum(knobvalue)
+        self.midi_message_common('Analog Feel Depth', knobvalue)
+
+    def update_vel_xfade_depth(self, knobvalue):
+        self.label_velocitycrossfadedepthvalue.setNum(knobvalue)
+        # tone
+
+    def update_vel_range_lower(self, knobvalue):
+        if knobvalue > self.dial_velocityrangeupper.value():
+            self.dial_velocityrangeupper.setProperty("value", knobvalue)
+
+        self.label_velocityrangelowervalue.setNum(knobvalue)
+        # tone
+
+    def update_vel_range_upper(self, knobvalue):
+        if knobvalue < self.dial_velocityrangelower.value():
+            self.dial_velocityrangelower.setProperty("value", knobvalue)
+
+        self.label_velocityrangeuppervalue.setNum(knobvalue)
+        # tone
+
+    def update_key_range_lower(self, knobvalue):
+        if knobvalue > self.dial_keyrangeupper.value():
+            self.dial_keyrangeupper.setProperty("value", knobvalue)
+
+        self.label_keyrangelowervalue.setText(str(jvp.PATCH_COMMON_PARAMS['Key Range Lower'][knobvalue]))
+        # tone
+
+    def update_key_range_upper(self, knobvalue):
+        if knobvalue < self.dial_keyrangelower.value():
+            self.dial_keyrangelower.setProperty("value", knobvalue)
+
+        self.label_keyrangeuppervalue.setText(str(jvp.PATCH_COMMON_PARAMS['Key Range Upper'][knobvalue]))
+        # tone
+
+
+
     def midi_message_common(self, midiparam, midivalue):
         PREAMBLE = [240, 65, 16, 106, 18]
         EOX = [247]
+        COMMON_ADDRESS = [3, 0, 0]
+        commonparam = [jvm.PATCH_COMMON.index(midiparam)]
+        commonvalue = [midivalue]
+
+        payload = COMMON_ADDRESS + commonparam + commonvalue
+
+        checktotal = sum(payload)
+        remainder = checktotal % 128
+        checksum = [128 - remainder]
+
+        sysexmessage = PREAMBLE + payload + checksum + EOX
+
+        self.statusbar.showMessage(str(sysexmessage), 1000)
         
 
     def midi_message_tone(self, midiparam, midivalue):
