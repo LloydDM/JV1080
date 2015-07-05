@@ -2349,6 +2349,8 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         
         QtCore.QObject.connect(self.actionQuit, QtCore.SIGNAL(_fromUtf8("activated()")), MainWindow.close)
+        QtCore.QObject.connect(self.button_changename, QtCore.SIGNAL(_fromUtf8("clicked()")), self.update_patch_name)
+        QtCore.QObject.connect(self.spinBox_tempo, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), self.update_default_tempo)
         QtCore.QObject.connect(self.dial_patchlevel, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), self.update_patch_level)
         QtCore.QObject.connect(self.dial_patchpan, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), self.update_patch_pan)
         QtCore.QObject.connect(self.dial_analogfeeldepth, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), self.update_analog_feel_depth)
@@ -2623,7 +2625,6 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(_translate("MainWindow", "JV1080 Patch Editor", None))
         self.groupBox_patchname.setTitle(_translate("MainWindow", "Patch Name", None))
-        self.line_patchname.setInputMask(_translate("MainWindow", "nnnnnnnnnnnn", None))
         self.line_patchname.setPlaceholderText(_translate("MainWindow", "12 Chars Max", None))
         self.button_changename.setText(_translate("MainWindow", "Change Name", None))
         self.label_structure.setText(_translate("MainWindow", "Structure", None))
@@ -2805,6 +2806,16 @@ class Ui_MainWindow(object):
         self.menuFile.setTitle(_translate("MainWindow", "File", None))
         self.actionQuit.setText(_translate("MainWindow", "Quit", None))
 
+    def check_tone_selects(self):
+        pass
+
+    def update_patch_name(self):
+        newpatchname = '{:<12}'.format(str(self.line_patchname.text()))
+        self.midi_message_common('Patch Name 1', newpatchname)
+
+    def update_default_tempo(self, spinvalue):
+        self.midi_message_common('Default Tempo', spinvalue)
+
     def update_patch_level(self, knobvalue):
         self.label_patchlevelvalue.setNum(knobvalue)
         self.midi_message_common('Patch Level', knobvalue)
@@ -2858,6 +2869,12 @@ class Ui_MainWindow(object):
         commonparam = [jvm.PATCH_COMMON.index(midiparam)]
         commonvalue = [midivalue]
 
+        if midiparam == 'Default Tempo':
+            commonvalue = [midivalue / 16, midivalue % 16]
+
+        if midiparam == 'Patch Name 1':
+            commonvalue = [ord(c) for c in midivalue]
+
         payload = COMMON_ADDRESS + commonparam + commonvalue
 
         checktotal = sum(payload)
@@ -2872,6 +2889,14 @@ class Ui_MainWindow(object):
     def midi_message_tone(self, midiparam, midivalue):
         PREAMBLE = [240, 65, 16, 106, 18]
         EOX = [247]
+        TONE_1_ADDRESS = [3, 0, 16]
+        TONE_2_ADDRESS = [3, 0, 18]
+        TONE_3_ADDRESS = [3, 0, 20]
+        TONE_4_ADDRESS = [3, 0, 22]
+        toneparam = [jvm.PATCH_TONE.index(midiparam)]
+        tonevalue = [midivalue]
+
+
 
 
 

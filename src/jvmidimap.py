@@ -58,6 +58,7 @@ PATCH_COMMON = ('Patch Name 1',
                 'Reverb:HF Damp',
                 'Reverb:Feedback',
                 'Default Tempo', # Requires split-byte send
+                'Default Tempo Byte 2',
                 'Patch Level',
                 'Patch Pan',
                 'Analog Feel Depth',
@@ -90,6 +91,7 @@ PATCH_TONE = ('Tone Switch',
               'Wave Group',
               'Wave Group ID',
               'Wave Number', # Requires split-byte send
+              'Wave Number Byte 2'
               'Wave Gain',
               'FXM Switch',
               'FXM Color',
