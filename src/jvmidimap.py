@@ -91,7 +91,7 @@ PATCH_TONE = ('Tone Switch',
               'Wave Group',
               'Wave Group ID',
               'Wave Number', # Requires split-byte send
-              'Wave Number Byte 2'
+              'Wave Number Byte 2',
               'Wave Gain',
               'FXM Switch',
               'FXM Color',

@@ -65,27 +65,48 @@ class Ui_MainWindow(object):
         self.button_changename = QtGui.QPushButton(self.groupBox_patchname)
         self.button_changename.setGeometry(QtCore.QRect(130, 20, 111, 25))
         self.button_changename.setObjectName(_fromUtf8("button_changename"))
-        self.graphicsView_structure = QtGui.QGraphicsView(self.tab_common)
-        self.graphicsView_structure.setGeometry(QtCore.QRect(110, 335, 350, 100))
-        self.graphicsView_structure.setFrameShape(QtGui.QFrame.Box)
-        self.graphicsView_structure.setFrameShadow(QtGui.QFrame.Plain)
-        self.graphicsView_structure.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
-        self.graphicsView_structure.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
-        self.graphicsView_structure.setObjectName(_fromUtf8("graphicsView_structure"))
-        self.comboBox_structure = QtGui.QComboBox(self.tab_common)
-        self.comboBox_structure.setGeometry(QtCore.QRect(10, 355, 91, 25))
-        self.comboBox_structure.setObjectName(_fromUtf8("comboBox_structure"))
-        self.label_structure = QtGui.QLabel(self.tab_common)
-        self.label_structure.setGeometry(QtCore.QRect(10, 335, 91, 16))
-        self.label_structure.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_structure.setObjectName(_fromUtf8("label_structure"))
-        self.comboBox_boosterlevel = QtGui.QComboBox(self.tab_common)
-        self.comboBox_boosterlevel.setGeometry(QtCore.QRect(10, 410, 91, 25))
-        self.comboBox_boosterlevel.setObjectName(_fromUtf8("comboBox_boosterlevel"))
-        self.label_boosterlevel = QtGui.QLabel(self.tab_common)
-        self.label_boosterlevel.setGeometry(QtCore.QRect(10, 390, 91, 16))
-        self.label_boosterlevel.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_boosterlevel.setObjectName(_fromUtf8("label_boosterlevel"))
+        self.graphicsView_structure12 = QtGui.QGraphicsView(self.tab_common)
+        self.graphicsView_structure12.setGeometry(QtCore.QRect(95, 335, 350, 100))
+        self.graphicsView_structure12.setFrameShape(QtGui.QFrame.Box)
+        self.graphicsView_structure12.setFrameShadow(QtGui.QFrame.Plain)
+        self.graphicsView_structure12.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
+        self.graphicsView_structure12.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
+        self.graphicsView_structure12.setObjectName(_fromUtf8("graphicsView_structure12"))
+        self.comboBox_structure12 = QtGui.QComboBox(self.tab_common)
+        self.comboBox_structure12.setGeometry(QtCore.QRect(10, 355, 76, 25))
+        self.comboBox_structure12.setObjectName(_fromUtf8("comboBox_structure12"))
+        self.label_structure12 = QtGui.QLabel(self.tab_common)
+        self.label_structure12.setGeometry(QtCore.QRect(10, 335, 76, 16))
+        self.label_structure12.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_structure12.setObjectName(_fromUtf8("label_structure12"))
+        self.comboBox_boosterlevel12 = QtGui.QComboBox(self.tab_common)
+        self.comboBox_boosterlevel12.setGeometry(QtCore.QRect(10, 410, 76, 25))
+        self.comboBox_boosterlevel12.setObjectName(_fromUtf8("comboBox_boosterlevel12"))
+        self.label_boosterlevel12 = QtGui.QLabel(self.tab_common)
+        self.label_boosterlevel12.setGeometry(QtCore.QRect(10, 390, 76, 16))
+        self.label_boosterlevel12.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_boosterlevel12.setObjectName(_fromUtf8("label_boosterlevel12"))
+        self.graphicsView_structure34 = QtGui.QGraphicsView(self.tab_common)
+        self.graphicsView_structure34.setGeometry(QtCore.QRect(540, 335, 350, 100))
+        self.graphicsView_structure34.setFrameShape(QtGui.QFrame.Box)
+        self.graphicsView_structure34.setFrameShadow(QtGui.QFrame.Plain)
+        self.graphicsView_structure34.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
+        self.graphicsView_structure34.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
+        self.graphicsView_structure34.setObjectName(_fromUtf8("graphicsView_structure34"))
+        self.comboBox_structure34 = QtGui.QComboBox(self.tab_common)
+        self.comboBox_structure34.setGeometry(QtCore.QRect(455, 355, 76, 25))
+        self.comboBox_structure34.setObjectName(_fromUtf8("comboBox_structure34"))
+        self.label_structure34 = QtGui.QLabel(self.tab_common)
+        self.label_structure34.setGeometry(QtCore.QRect(455, 335, 76, 16))
+        self.label_structure34.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_structure34.setObjectName(_fromUtf8("label_structure34"))
+        self.comboBox_boosterlevel34 = QtGui.QComboBox(self.tab_common)
+        self.comboBox_boosterlevel34.setGeometry(QtCore.QRect(455, 410, 76, 25))
+        self.comboBox_boosterlevel34.setObjectName(_fromUtf8("comboBox_boosterlevel34"))
+        self.label_boosterlevel34 = QtGui.QLabel(self.tab_common)
+        self.label_boosterlevel34.setGeometry(QtCore.QRect(455, 390, 76, 16))
+        self.label_boosterlevel34.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_boosterlevel34.setObjectName(_fromUtf8("label_boosterlevel34"))
         self.spinBox_tempo = QtGui.QSpinBox(self.tab_common)
         self.spinBox_tempo.setGeometry(QtCore.QRect(280, 30, 86, 25))
         self.spinBox_tempo.setMouseTracking(False)
@@ -2344,11 +2365,15 @@ class Ui_MainWindow(object):
 
         self.initialize_comboBoxes()
         self.initialize_dial_values()
-        self.update_structure_image('1')
-        self.update_efx_parameters('STEREO EQ')
+        self.initialize_structure_images()
+        self.initialize_efx_parameters('STEREO EQ')
         self.retranslateUi(MainWindow)
         
         QtCore.QObject.connect(self.actionQuit, QtCore.SIGNAL(_fromUtf8("activated()")), MainWindow.close)
+        QtCore.QObject.connect(self.checkBox_tone1, QtCore.SIGNAL(_fromUtf8("stateChanged(int)")), self.tone_1_redirect)
+        QtCore.QObject.connect(self.checkBox_tone2, QtCore.SIGNAL(_fromUtf8("stateChanged(int)")), self.tone_2_redirect)
+        QtCore.QObject.connect(self.checkBox_tone3, QtCore.SIGNAL(_fromUtf8("stateChanged(int)")), self.tone_3_redirect) 
+        QtCore.QObject.connect(self.checkBox_tone4, QtCore.SIGNAL(_fromUtf8("stateChanged(int)")), self.tone_4_redirect)
         QtCore.QObject.connect(self.button_changename, QtCore.SIGNAL(_fromUtf8("clicked()")), self.update_patch_name)
         QtCore.QObject.connect(self.spinBox_tempo, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), self.update_default_tempo)
         QtCore.QObject.connect(self.dial_patchlevel, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), self.update_patch_level)
@@ -2359,8 +2384,17 @@ class Ui_MainWindow(object):
         QtCore.QObject.connect(self.dial_velocityrangeupper, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), self.update_vel_range_upper)
         QtCore.QObject.connect(self.dial_keyrangelower, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), self.update_key_range_lower)
         QtCore.QObject.connect(self.dial_keyrangeupper, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), self.update_key_range_upper)
-        QtCore.QObject.connect(self.comboBox_structure, QtCore.SIGNAL(_fromUtf8("currentIndexChanged(QString)")), self.update_structure_image)
+        QtCore.QObject.connect(self.comboBox_octaveshift, QtCore.SIGNAL(_fromUtf8("currentIndexChanged(int)")), self.update_octave_shift)
+        QtCore.QObject.connect(self.comboBox_voicepriority, QtCore.SIGNAL(_fromUtf8("currentIndexChanged(int)")), self.update_voice_priority)
+        QtCore.QObject.connect(self.comboBox_stretchtunedepth, QtCore.SIGNAL(_fromUtf8("currentIndexChanged(int)")), self.update_stretch_tune_depth)
+        QtCore.QObject.connect(self.comboBox_velocityrangeswitch, QtCore.SIGNAL(_fromUtf8("currentIndexChanged(int)")), self.update_velocity_range_switch)
+        QtCore.QObject.connect(self.comboBox_structure12, QtCore.SIGNAL(_fromUtf8("currentIndexChanged(int)")), self.update_structure12)
+        QtCore.QObject.connect(self.comboBox_structure34, QtCore.SIGNAL(_fromUtf8("currentIndexChanged(int)")), self.update_structure34)
+        QtCore.QObject.connect(self.comboBox_boosterlevel12, QtCore.SIGNAL(_fromUtf8("currentIndexChanged(int)")), self.update_booster12)
+        QtCore.QObject.connect(self.comboBox_boosterlevel34, QtCore.SIGNAL(_fromUtf8("currentIndexChanged(int)")), self.update_booster34)
         QtCore.QObject.connect(self.comboBox_effecttype, QtCore.SIGNAL(_fromUtf8("currentIndexChanged(QString)")), self.update_efx_parameters)
+        QtCore.QObject.connect(self.dial_efxparameter1, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), self.update_efx_parameter_1)
+        QtCore.QObject.connect(self.dial_efxparameter2, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), self.update_efx_parameter_2)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
         
         self.statusbar.showMessage("Ready", 5000)
@@ -2375,10 +2409,14 @@ class Ui_MainWindow(object):
         self.comboBox_stretchtunedepth.setCurrentIndex(0)
         self.comboBox_velocityrangeswitch.addItems(jvp.PATCH_COMMON_PARAMS['Velocity Range Switch'])
         self.comboBox_velocityrangeswitch.setCurrentIndex(0)
-        self.comboBox_structure.addItems(jvp.PATCH_COMMON_PARAMS['Structure'])
-        self.comboBox_structure.setCurrentIndex(0)
-        self.comboBox_boosterlevel.addItems(jvp.PATCH_COMMON_PARAMS['Booster Level'])
-        self.comboBox_boosterlevel.setCurrentIndex(0)
+        self.comboBox_structure12.addItems(jvp.PATCH_COMMON_PARAMS['Structure 1 & 2'])
+        self.comboBox_structure12.setCurrentIndex(0)
+        self.comboBox_structure34.addItems(jvp.PATCH_COMMON_PARAMS['Structure 3 & 4'])
+        self.comboBox_structure34.setCurrentIndex(0)
+        self.comboBox_boosterlevel12.addItems(jvp.PATCH_COMMON_PARAMS['Booster Level 1 & 2'])
+        self.comboBox_boosterlevel12.setCurrentIndex(0)
+        self.comboBox_boosterlevel34.addItems(jvp.PATCH_COMMON_PARAMS['Booster Level 3 & 4'])
+        self.comboBox_boosterlevel34.setCurrentIndex(0)
 
         # Effects Tab
         self.comboBox_effectsoutput.addItems(jvp.PATCH_EFX_PARAMS['Output Assign'])
@@ -2584,8 +2622,21 @@ class Ui_MainWindow(object):
         self.label_aenvlevel1value.setNum(self.verticalSlider_aenvlevel1.value())
         self.label_aenvlevel2value.setNum(self.verticalSlider_aenvlevel2.value())
         self.label_aenvlevel3value.setNum(self.verticalSlider_aenvlevel3.value())
+
+    def initialize_structure_images(self):
+        self.structureImage12 = QtGui.QPixmap()
+        self.structureImage12.load('../img/structure1.png')
+        self.structureScene12 = QtGui.QGraphicsScene()
+        self.structureScene12.addPixmap(self.structureImage12)
+        self.graphicsView_structure12.setScene(self.structureScene12)
+
+        self.structureImage34 = QtGui.QPixmap()
+        self.structureImage34.load('../img/structure1.png')
+        self.structureScene34 = QtGui.QGraphicsScene()
+        self.structureScene34.addPixmap(self.structureImage34)
+        self.graphicsView_structure34.setScene(self.structureScene34)
    
-    def update_efx_parameters(self, effect):
+    def initialize_efx_parameters(self, effect):
         self.label_efxcontrol1.setText(jvp.EFX_PARAMS[str(effect)][0][0])
         self.label_efxcontrol2.setText(jvp.EFX_PARAMS[str(effect)][0][1])
         if jvp.EFX_PARAMS[str(effect)][0][1] == '':
@@ -2605,7 +2656,7 @@ class Ui_MainWindow(object):
             efxlabels[efxparam].setText(str(paramlist[efxparam][0]))
             efxdials[efxparam].setEnabled(True)
             efxdials[efxparam].setNotchesVisible(True)
-            efxdials[efxparam].setMaximum(len(paramlist[efxparam][1]))
+            efxdials[efxparam].setMaximum((len(paramlist[efxparam][1])) - 1)
             efxdials[efxparam].setProperty("value", paramlist[efxparam][2])
             efxvalues[efxparam].setText(str(paramlist[efxparam][1][efxdials[efxparam].value()]))
         
@@ -2615,20 +2666,15 @@ class Ui_MainWindow(object):
             efxdials[emptylabel].setDisabled(True)
             efxdials[emptylabel].setNotchesVisible(False)
         
-    def update_structure_image(self, structure):
-        self.structureImage = QtGui.QPixmap()
-        self.structureImage.load('../img/structure' + structure + '.png')
-        self.structureScene = QtGui.QGraphicsScene()
-        self.structureScene.addPixmap(self.structureImage)
-        self.graphicsView_structure.setScene(self.structureScene)
-
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(_translate("MainWindow", "JV1080 Patch Editor", None))
         self.groupBox_patchname.setTitle(_translate("MainWindow", "Patch Name", None))
         self.line_patchname.setPlaceholderText(_translate("MainWindow", "12 Chars Max", None))
         self.button_changename.setText(_translate("MainWindow", "Change Name", None))
-        self.label_structure.setText(_translate("MainWindow", "Structure", None))
-        self.label_boosterlevel.setText(_translate("MainWindow", "Booster Level", None))
+        self.label_structure12.setText(_translate("MainWindow", "Struct 1/2", None))
+        self.label_boosterlevel12.setText(_translate("MainWindow", "Booster 1/2", None))
+        self.label_structure34.setText(_translate("MainWindow", "Struct 3/4", None))
+        self.label_boosterlevel34.setText(_translate("MainWindow", "Booster 3/4", None))
         self.spinBox_tempo.setSuffix(_translate("MainWindow", " BPM", None))
         self.label_tempo.setText(_translate("MainWindow", "Patch Tempo", None))
         self.label_octaveshift.setText(_translate("MainWindow", "Octave Shift", None))
@@ -2806,8 +2852,27 @@ class Ui_MainWindow(object):
         self.menuFile.setTitle(_translate("MainWindow", "File", None))
         self.actionQuit.setText(_translate("MainWindow", "Quit", None))
 
-    def check_tone_selects(self):
-        pass
+    def tone_1_redirect(self):
+        self.check_tone_selects(self.checkBox_tone1)
+
+    def tone_2_redirect(self):
+        self.check_tone_selects(self.checkBox_tone2)
+
+    def tone_3_redirect(self):
+        self.check_tone_selects(self.checkBox_tone3)
+
+    def tone_4_redirect(self):
+        self.check_tone_selects(self.checkBox_tone4)
+
+    def check_tone_selects(self, box):
+        tone1state = self.checkBox_tone1.isChecked()
+        tone2state = self.checkBox_tone2.isChecked()
+        tone3state = self.checkBox_tone3.isChecked()
+        tone4state = self.checkBox_tone4.isChecked()
+
+        if (not tone1state and not tone2state and not tone3state and not tone4state):
+            box.setCheckState(2)
+            self.statusbar.showMessage('At least one Tone must be selected', 2000)
 
     def update_patch_name(self):
         newpatchname = '{:<12}'.format(str(self.line_patchname.text()))
@@ -2830,37 +2895,182 @@ class Ui_MainWindow(object):
 
     def update_vel_xfade_depth(self, knobvalue):
         self.label_velocitycrossfadedepthvalue.setNum(knobvalue)
-        # tone
+        self.midi_message_tone('Velocity Cross Fade Depth', knobvalue)
 
     def update_vel_range_lower(self, knobvalue):
         if knobvalue > self.dial_velocityrangeupper.value():
             self.dial_velocityrangeupper.setProperty("value", knobvalue)
 
         self.label_velocityrangelowervalue.setNum(knobvalue)
-        # tone
+        self.midi_message_tone('Velocity Range Lower', knobvalue)
 
     def update_vel_range_upper(self, knobvalue):
         if knobvalue < self.dial_velocityrangelower.value():
             self.dial_velocityrangelower.setProperty("value", knobvalue)
 
         self.label_velocityrangeuppervalue.setNum(knobvalue)
-        # tone
+        self.midi_message_tone('Velocity Range Upper', knobvalue)
 
     def update_key_range_lower(self, knobvalue):
         if knobvalue > self.dial_keyrangeupper.value():
             self.dial_keyrangeupper.setProperty("value", knobvalue)
 
         self.label_keyrangelowervalue.setText(str(jvp.PATCH_COMMON_PARAMS['Key Range Lower'][knobvalue]))
-        # tone
+        self.midi_message_tone('Key Range Lower', knobvalue)
 
     def update_key_range_upper(self, knobvalue):
         if knobvalue < self.dial_keyrangelower.value():
             self.dial_keyrangelower.setProperty("value", knobvalue)
 
         self.label_keyrangeuppervalue.setText(str(jvp.PATCH_COMMON_PARAMS['Key Range Upper'][knobvalue]))
-        # tone
+        self.midi_message_tone('Key Range Upper', knobvalue)
 
+    def update_octave_shift(self, combovalue):
+        self.midi_message_common('Octave Shift', combovalue)
 
+    def update_voice_priority(self, combovalue):
+        self.midi_message_common('Voice Priority', combovalue)
+
+    def update_stretch_tune_depth(self, combovalue):
+        self.midi_message_common('Stretch Tune Depth', combovalue)
+
+    def update_velocity_range_switch(self, combovalue):
+        self.midi_message_common('Velocity Range Switch', combovalue)
+
+    def update_structure12(self, structure):
+        self.structureImage = QtGui.QPixmap()
+        self.structureImage.load('../img/structure' + str(structure + 1) + '.png')
+        self.structureScene = QtGui.QGraphicsScene()
+        self.structureScene.addPixmap(self.structureImage)
+        self.graphicsView_structure12.setScene(self.structureScene)
+
+        self.midi_message_common('Structure Type 1 & 2', structure)
+
+    def update_structure34(self, structure):
+        self.structureImage = QtGui.QPixmap()
+        self.structureImage.load('../img/structure' + str(structure + 1) + '.png')
+        self.structureScene = QtGui.QGraphicsScene()
+        self.structureScene.addPixmap(self.structureImage)
+        self.graphicsView_structure34.setScene(self.structureScene)
+
+        self.midi_message_common('Structure Type 3 & 4', structure)
+
+    def update_booster12(self, combovalue):
+        self.midi_message_common('Booster Level 1 & 2', combovalue)
+
+    def update_booster34(self, combovalue):
+        self.midi_message_common('Booster Level 3 & 4', combovalue)
+
+    def update_efx_parameters(self, effect):
+        self.label_efxcontrol1.setText(jvp.EFX_PARAMS[str(effect)][0][0])
+        self.label_efxcontrol2.setText(jvp.EFX_PARAMS[str(effect)][0][1])
+        if jvp.EFX_PARAMS[str(effect)][0][1] == '':
+            self.comboBox_efxcontrol2.setDisabled(True)
+            self.spinBox_efxcontrol2.setDisabled(True)
+        else:
+            self.comboBox_efxcontrol2.setEnabled(True)
+            self.spinBox_efxcontrol2.setEnabled(True)
+
+        efxdials = [self.dial_efxparameter1, self.dial_efxparameter2, self.dial_efxparameter3, self.dial_efxparameter4, self.dial_efxparameter5, self.dial_efxparameter6, self.dial_efxparameter7, self.dial_efxparameter8, self.dial_efxparameter9, self.dial_efxparameter10, self.dial_efxparameter11, self.dial_efxparameter12]
+        efxlabels = [self.label_efxparameter1, self.label_efxparameter2, self.label_efxparameter3, self.label_efxparameter4, self.label_efxparameter5, self.label_efxparameter6, self.label_efxparameter7, self.label_efxparameter8, self.label_efxparameter9, self.label_efxparameter10, self.label_efxparameter11, self.label_efxparameter12]
+        efxvalues = [self.label_efxparameter1value, self.label_efxparameter2value, self.label_efxparameter3value, self.label_efxparameter4value, self.label_efxparameter5value, self.label_efxparameter6value, self.label_efxparameter7value, self.label_efxparameter8value, self.label_efxparameter9value, self.label_efxparameter10value, self.label_efxparameter11value, self.label_efxparameter12value]
+        
+        paramlist = jvp.EFX_PARAMS[str(effect)][1:]
+
+        for efxparam in range(len(paramlist)):
+            efxlabels[efxparam].setText(str(paramlist[efxparam][0]))
+            efxdials[efxparam].setEnabled(True)
+            efxdials[efxparam].setNotchesVisible(True)
+            efxdials[efxparam].setMaximum((len(paramlist[efxparam][1])) - 1)
+            efxdials[efxparam].setProperty("value", paramlist[efxparam][2])
+            efxvalues[efxparam].setText(str(paramlist[efxparam][1][efxdials[efxparam].value()]))
+        
+        for emptylabel in range((efxparam + 1), len(efxlabels)):
+            efxlabels[emptylabel].setText('')
+            efxvalues[emptylabel].setText('')
+            efxdials[emptylabel].setDisabled(True)
+            efxdials[emptylabel].setNotchesVisible(False)
+
+        self.midi_message_common('EFX:Type', jvp.PATCH_EFX_PARAMS['Patch EFX Type'].index(str(effect)))
+
+    def update_output_assign(self, combovalue):
+        self.midi_message_tone('Output Assign', combovalue)
+
+    def update_output_level(self, spinvalue):
+        self.midi_message_tone('Output Level', spinvalue)
+
+    def update_efx_output_assign(self, combovalue):
+        self.midi_message_common('EFX:Output Assign', combovalue)
+
+    def update_efx_output_level(self, spinvalue):
+        self.midi_message_common('EFX:Output Level', spinvalue)
+
+    def update_tone_chorus_send(self, spinvalue):
+        self.midi_message_tone('Chorus Send Level', spinvalue)
+
+    def update_efx_chorus_level(self, spinvalue):
+        self.midi_message_common('EFX:Chorus Send Level', spinvalue)
+
+    def update_tone_reverb_level(self, spinvalue):
+        self.midi_message_tone('Reverb Send Level', spinvalue)
+
+    def update_efx_reverb_send_level(self, spinvalue):
+        self.midi_message_common('EFX:Reverb Send Level', spinvalue)
+
+    def update_efx_control_source_1(self, combovalue):
+        self.midi_message_common('EFX:Control Source 1', combovalue)
+
+    def update_efx_control_depth_1(self, spinvalue):
+        self.midi_message_common('EFX:Control Depth 1', spinvalue)
+
+    def update_efx_control_source_2(self, combovalue):
+        self.midi_message_common('EFX:Control Source 2', combovalue)
+
+    def update_efx_control_depth_2(self, spinvalue):
+        self.midi_message_common('EFX:Control Depth 2', spinvalue)
+
+    def update_chorus_rate(self, spinvalue):
+        self.midi_message_common('Chorus:Rate', spinvalue)
+
+    def update_chorus_depth(self, spinvalue):
+        self.midi_message_common('Chorus:Depth', spinvalue)
+
+    def update_chorus_predelay(self, spinvalue):
+        self.midi_message_common('Chorus:Pre Delay', spinvalue)
+
+    def update_chorus_feedback(self, spinvalue):
+        self.midi_message_common('Chorus:Feedback', spinvalue)
+
+    def update_chorus_level(self, spinvalue):
+        self.midi_message_common('Chorus:Level', spinvalue)
+
+    def update_chorus_output_assign(self, combovalue):
+        self.midi_message_common('Chorus:Output Assign', combovalue)
+
+    def update_reverb_type(self, combovalue):
+        self.midi_message_common('Reverb:Type', combovalue)
+
+    def update_reverb_time(self, spinvalue):
+        self.midi_message_common('Reverb:Time', spinvalue)
+
+    def update_reverb_level(self, spinvalue):
+        self.midi_message_common('Reverb:Level', spinvalue)
+
+    def update_reverb_delay_feedback(self, spinvalue):
+        self.midi_message_common('Reverb:Feedback', spinvalue)
+
+    def update_reverb_hf_damp(self, combovalue):
+        self.midi_message_common('Reverb:HF Damp', combovalue)
+
+    def update_efx_parameter_1(self, knobvalue):
+        self.label_efxparameter1value.setText(str(jvp.EFX_PARAMS[str(self.comboBox_effecttype.currentText())][1][1][knobvalue]))
+        #jvp.EFX_PARAMS[str(self.comboBox_effecttype.currentText())][1][2] = knobvalue
+        self.midi_message_common('EFX:Parameter 1', knobvalue)
+
+    def update_efx_parameter_2(self, knobvalue):
+        self.label_efxparameter2value.setText(str(jvp.EFX_PARAMS[str(self.comboBox_effecttype.currentText())][2][1][knobvalue]))
+        #jvp.EFX_PARAMS[str(self.comboBox_effecttype.currentText())][2][2] = knobvalue
+        self.midi_message_common('EFX:Parameter 2', knobvalue)
 
     def midi_message_common(self, midiparam, midivalue):
         PREAMBLE = [240, 65, 16, 106, 18]
@@ -2883,8 +3093,7 @@ class Ui_MainWindow(object):
 
         sysexmessage = PREAMBLE + payload + checksum + EOX
 
-        self.statusbar.showMessage(str(sysexmessage), 1000)
-        
+        print sysexmessage
 
     def midi_message_tone(self, midiparam, midivalue):
         PREAMBLE = [240, 65, 16, 106, 18]
@@ -2896,7 +3105,49 @@ class Ui_MainWindow(object):
         toneparam = [jvm.PATCH_TONE.index(midiparam)]
         tonevalue = [midivalue]
 
+        if self.checkBox_tone1.isChecked():
+            tone1payload = TONE_1_ADDRESS + toneparam + tonevalue
 
+            tone1checktotal = sum(tone1payload)
+            tone1remainder = tone1checktotal % 128
+            tone1checksum = [128 - tone1remainder]
+
+            tone1sysexmessage = PREAMBLE + tone1payload + tone1checksum + EOX
+
+            print tone1sysexmessage
+
+        if self.checkBox_tone2.isChecked():
+            tone2payload = TONE_2_ADDRESS + toneparam + tonevalue
+
+            tone2checktotal = sum(tone2payload)
+            tone2remainder = tone2checktotal % 128
+            tone2checksum = [128 - tone2remainder]
+
+            tone2sysexmessage = PREAMBLE + tone2payload + tone2checksum + EOX
+
+            print tone2sysexmessage
+            
+        if self.checkBox_tone3.isChecked():
+            tone3payload = TONE_3_ADDRESS + toneparam + tonevalue
+
+            tone3checktotal = sum(tone3payload)
+            tone3remainder = tone3checktotal % 128
+            tone3checksum = [128 - tone3remainder]
+
+            tone3sysexmessage = PREAMBLE + tone3payload + tone3checksum + EOX
+
+            print tone3sysexmessage
+
+        if self.checkBox_tone4.isChecked():
+            tone4payload = TONE_4_ADDRESS + toneparam + tonevalue
+
+            tone4checktotal = sum(tone4payload)
+            tone4remainder = tone4checktotal % 128
+            tone4checksum = [128 - tone4remainder]
+
+            tone4sysexmessage = PREAMBLE + tone4payload + tone4checksum + EOX
+
+            print tone4sysexmessage    
 
 
 
